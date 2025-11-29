@@ -1,0 +1,14 @@
+#foot_template {
+                width: 70vw;
+                height: 10vw;
+                margin: auto;
+                margin-top: 5vw;
+                font-size: 3vh;
+            }
+
+.p_footer_contact {
+    color: #F0E6D6;
+    margin-left: 1vw
+}
+
+/*----------------------------------------------------------------------------------------------------*/

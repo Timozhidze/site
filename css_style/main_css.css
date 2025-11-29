@@ -123,17 +123,6 @@ p {
 
 /*----------------------------------------------------------------------------------------------------*/
 
-#foot_template {
-                border: 0px solid blue;
-                width: 70vw;
-                height: 10vw;
-                margin: auto;
-                margin-top: 5vw;
-                font-size: 3vh;
-            }
-
-/*----------------------------------------------------------------------------------------------------*/
-
 #div_head_main {
                 display: flex; 
                 justify-content: space-evenly; 
