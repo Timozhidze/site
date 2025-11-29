@@ -1,0 +1,76 @@
+body {
+            
+            font-family: "Comfortaa", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+            margin: 0;
+            padding: 0;
+            color: white;
+} 
+
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    width: 10vw;         
+    height: 5vh; 
+    font-size: 2vh;
+    margin: 0; 
+    background: #2C1250;
+    color: white;
+    border: 0.2vh solid #7127BA;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+    font-size: 1,5vw;
+}
+
+
+
+#first_div_card {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+}
+
+#second_div {
+            display: flex; 
+            justify-content: center;
+}
+
+#thirty_div {
+            border: 0px solid green; 
+            display: flex; 
+            justify-content: center;
+}
+
+#div_card_img_first {
+                margin-left: 10%; 
+                width: 10vw; 
+                height: 6vw; 
+                border: 0px solid #7127BA;
+                
+}
+
+#div_card_img_second {
+            margin-left: 10%; 
+            border: 0px solid yellow; 
+            height: 100%; 
+            width: 100%; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-evenly;
+}
+        
