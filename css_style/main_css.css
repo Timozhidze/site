@@ -7,7 +7,12 @@ body {
 
             margin: 0;
             padding: 0;
-            
+
+            background: #11071f;
+            color: #F0E6D6;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
 } 
 
 button {
@@ -15,11 +20,13 @@ button {
     height: 5vh; 
     font-size: 2vh;
     margin: 0; 
+
     background: #2C1250;
-    
     border: 0.2vh solid #7127BA;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 black;
+    color: #F0E6D6;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +37,16 @@ button {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            border: 0px solid green;
 }
 
 #second_div {
             display: flex; 
             justify-content: center;
+
+            display: flex; 
+            justify-content: center;
+            border: 0px solid white;
 }
 
 #thirty_div {
@@ -47,8 +59,7 @@ button {
                 margin-left: 10%; 
                 width: 10vw; 
                 height: 6vw; 
-                border: 0px solid #7127BA;
-                
+                border: 0px solid #7127BA;               
 }
 
 #div_card_img_second {
@@ -60,8 +71,6 @@ button {
             flex-direction: column; 
             justify-content: space-evenly;
 }
-        
-
 
 /*----------------------------------------------------------------------------------------------------*/
 
@@ -74,24 +83,6 @@ p {
 }
 
 /*----------------------------------------------------------------------------------------------------*/
-
-#div_card_img_first {
-                margin-left: 10%; 
-                width: 10vw; 
-                height: 6vw; 
-                border: 0px solid #7127BA;
-                
-}
-
-#div_card_img_second {
-            margin-left: 10%; 
-            border: 0px solid yellow; 
-            height: 100%; 
-            width: 100%; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-evenly;
-}
 
 #circle_font {
             width: 6vw; 
@@ -130,27 +121,6 @@ p {
     position: relative;
 }
 
-#first_div_card {
-            display: flex; 
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: column;
-            border: 0px solid green;
-}
-
-#second_div {
-            display: flex; 
-            justify-content: center;
-            border: 0px solid white;
-}
-
-#thirty_div {
-            display: flex; 
-            justify-content: center;
-            border: 0px solid white;
-}
-
-
 /*----------------------------------------------------------------------------------------------------*/
 
 #foot_template {
@@ -162,9 +132,7 @@ p {
                 font-size: 3vh;
             }
 
-
 /*----------------------------------------------------------------------------------------------------*/
-
 
 #div_head_main {
                 display: flex; 
@@ -180,32 +148,28 @@ header {
                 
             }
 
-
-
-p {
-    
-    font-size: 1,5vw;
-}
-
-
-/*
-#first_div_card {
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-}
-
-#second_div {
-            display: flex; 
-            justify-content: center;
-}
-
-#thirty_div {
-            border: 0px solid green; 
-            display: flex; 
-            justify-content: center;
-}
-*/
-
 /*----------------------------------------------------------------------------------------------------*/
+
+            #glowing_text {
+                font-size: 3em;
+                
+                text-align: center;
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #763CAC, 0 0 40px #763CAC, 0 0 50px #763CAC, 0 0 60px #763CAC, 0 0 70px #763CAC;
+            }
+
+            #img_glowing {
+                
+                text-align: center;
+                border-radius: 50%; /* Скругление углов для создания круга */  
+                background-image: radial-gradient(farthest-corner at center, #763CAC 0%, transparent 72%);
+                width: 6vw; 
+                height: 2vw; 
+            }
+            #img_glow_circle {
+                text-align: center;
+                border-radius: 50%; /* Скругление углов для создания круга */  
+                background-image: radial-gradient(farthest-corner at center, #763CAC 0%, transparent 72%);
+                width: 40vw; 
+                height: 45vw;
+                z-index: -10;
+            }
