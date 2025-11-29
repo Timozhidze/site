@@ -37,7 +37,9 @@ button {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border: 0px solid green;
+            background: red;
+
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100% );
 }
 
 #second_div {
@@ -129,12 +131,14 @@ p {
                 align-items: center; 
                 border: 0px solid red;
                 height: 100%;
+
+                
             }
             
 header {
                 background-color: #1A0B2E;  
                 height: 14vh;
-                
+
             }
 
 /*----------------------------------------------------------------------------------------------------*/
