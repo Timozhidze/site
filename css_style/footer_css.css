@@ -1,6 +1,6 @@
 #foot_template {
                 width: 80vw;
-                height: 20vw;
+                height: 24vw;
                 margin: auto;
                 margin-top: 5vw;
                 font-size: 3vh;
@@ -8,6 +8,7 @@
                 border: 1px solid red;
 
                 display: flex;
+                flex-direction: column;
             }
 
 .p_footer_contact {
