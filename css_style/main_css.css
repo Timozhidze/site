@@ -36,41 +36,25 @@ button {
             display: flex; 
             align-items: center;
             flex-direction: column;
-<<<<<<< HEAD
 
             height: 80vh;
 
-            background-image: url(../img/2.png);
+            background-image: url(../img/3.png);
             background-size: cover;
 
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70vh );
-=======
-            background: red;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 
-            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100% );
->>>>>>> 3c6cb78a9ca069698f09f8cdbeff3a3671062c25
-}
-
-#second_div {
-            display: flex; 
-            justify-content: center;
-
-            display: flex; 
-            justify-content: center;
-            border: 0px solid white;
 }
 
 #thirty_div {
-            border: 0px solid green; 
+            border: px solid green; 
             display: flex; 
             justify-content: center;
 
-            margin-top: -50%;
-
-            background: re;
+            margin-top: vw;
 
             z-index: -10;
-            height: 60vw;
+            height: 44vw;
 
             clip-path: polygon(0% 0%, 100% 0%, 100% 55vw, 0% 100% );
 }
@@ -154,7 +138,7 @@ p {
             }
             
 header {
-                background-color: #1A0B2E;  
+                background-color: #33043d;  
                 height: 14vh;
 
             }
