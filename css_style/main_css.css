@@ -36,6 +36,7 @@ button {
             display: flex; 
             align-items: center;
             flex-direction: column;
+<<<<<<< HEAD
 
             height: 80vh;
 
@@ -43,6 +44,11 @@ button {
             background-size: cover;
 
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70vh );
+=======
+            background: red;
+
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100% );
+>>>>>>> 3c6cb78a9ca069698f09f8cdbeff3a3671062c25
 }
 
 #second_div {
@@ -143,12 +149,14 @@ p {
                 align-items: center; 
                 border: 0px solid red;
                 height: 100%;
+
+                
             }
             
 header {
                 background-color: #1A0B2E;  
                 height: 14vh;
-                
+
             }
 
 /*----------------------------------------------------------------------------------------------------*/
