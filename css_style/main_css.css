@@ -34,10 +34,15 @@ button {
 
 #first_div_card {
             display: flex; 
-            justify-content: center;
             align-items: center;
             flex-direction: column;
-            border: 0px solid green;
+
+            height: 80vh;
+
+            background-image: url(../img/2.png);
+            background-size: cover;
+
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70vh );
 }
 
 #second_div {
@@ -53,6 +58,15 @@ button {
             border: 0px solid green; 
             display: flex; 
             justify-content: center;
+
+            margin-top: -50%;
+
+            background: re;
+
+            z-index: -10;
+            height: 60vw;
+
+            clip-path: polygon(0% 0%, 100% 0%, 100% 55vw, 0% 100% );
 }
 
 #div_card_img_first {
