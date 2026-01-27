@@ -44,6 +44,9 @@ button {
 
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 
+            box-shadow: inset 100px 0px 10vw 4vw black, inset 0px -100px 10vw 4vw black;
+           
+
 }
 
 #thirty_div {
@@ -53,10 +56,12 @@ button {
 
             margin-top: vw;
 
-            z-index: -10;
+            z-index: 10;
             height: 44vw;
 
             clip-path: polygon(0% 0%, 100% 0%, 100% 55vw, 0% 100% );
+
+            
 }
 
 #div_card_img_first {
