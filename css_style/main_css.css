@@ -9,6 +9,7 @@ body {
             padding: 0;
 
             background: #11071f;
+            
             color: #F0E6D6;
             display: flex;
             flex-direction: column; 
@@ -23,8 +24,8 @@ button {
 
     background: #2C1250;
     border: 0.2vh solid #7127BA;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px 0 black;
+    border-radius: 0.93vh;
+    box-shadow: 0 0.21vw 0.21vw 0 black;
     color: #F0E6D6;
 
     display: flex;
@@ -33,20 +34,20 @@ button {
 }
 
 #first_div_card {
-            display: flex; 
-            align-items: center;
-            flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-            height: 80vh;
+    height: 80vh;
 
-            background-image: url(../img/3.png);
-            background-size: cover;
+    background-image: url(../img/3.png);
+    background-size: cover;
 
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 
-            box-shadow: inset 100px 0px 10vw 4vw black, inset 0px -100px 10vw 4vw black;
-           
-
+    box-shadow: 
+        inset 5.21vw 0px 10vw 4vw black,
+        inset 0px -5.21vw 10vw 4vw black;
 }
 
 #thirty_div {
@@ -109,6 +110,7 @@ p {
                 margin-bottom: 0%; 
                 font-size: 2vw; 
                 border: 0px solid green;
+                color: #e60073;
 }
 
 #p_card_second {
@@ -118,10 +120,9 @@ p {
 }
 
 #div_cartochka {
-    background: linear-gradient(140deg,rgba(101, 8, 135, 0.41) 7%, rgba(37, 16, 67, 1) 34%, rgba(56, 18, 109, 0) 57%, rgba(38, 16, 69, 1) 85%, rgba(25, 6, 52, 0) 100%);
-    background: linear-gradient(140deg,rgba(54, 23, 97, 0.41) 0%, rgba(45, 25, 73, 1) 20%, rgba(44, 18, 80, 0) 90%);
+    background: linear-gradient(140deg, rgba(54,23,97,0.41) 0%, rgba(45,25,73,1) 20%, rgba(44,18,80,0.3) 70%, rgba(44,18,80,0.1) 90%);
     display: flex; 
-    border-radius: 5px; 
+    border-radius: 0.26vw; 
     width: 30vw; 
     height: 20vh; 
     align-items: center;
@@ -150,12 +151,18 @@ header {
 
 /*----------------------------------------------------------------------------------------------------*/
 
-            #glowing_text {
-                font-size: 3em;
-                
-                text-align: center;
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #763CAC, 0 0 40px #763CAC, 0 0 50px #763CAC, 0 0 60px #763CAC, 0 0 70px #763CAC;
-            }
+#glowing_text {
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 
+        0 0 0.52vw #fff,
+        0 0 1.04vw #fff,
+        0 0 1.56vw #763CAC,
+        0 0 2.08vw #763CAC,
+        0 0 2.60vw #763CAC,
+        0 0 3.12vw #763CAC,
+        0 0 3.65vw #763CAC;
+}
 
             #img_glowing {
                 
@@ -168,7 +175,7 @@ header {
             #img_glow_circle {
                 text-align: center;
                 border-radius: 50%; /* Скругление углов для создания круга */  
-                background-image: radial-gradient(farthest-corner at center, #763CAC 0%, transparent 72%);
+                background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
                 width: 40vw; 
                 height: 45vw;
                 z-index: -10;
