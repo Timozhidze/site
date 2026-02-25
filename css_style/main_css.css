@@ -33,6 +33,10 @@ button {
     align-items: center;
 }
 
+#text_button {
+
+}
+
 #first_div_card {
     display: flex;
     align-items: center;
@@ -51,18 +55,14 @@ button {
 }
 
 #thirty_div {
-            border: px solid green; 
-            display: flex; 
-            justify-content: center;
-
-            margin-top: vw;
-
-            z-index: 10;
-            height: 44vw;
-
-            clip-path: polygon(0% 0%, 100% 0%, 100% 55vw, 0% 100% );
-
-            
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 44vw;
+    clip-path: polygon(0vw 0vw, 100vw 0vw, 100vw 55vw, 0vw 44vw);
 }
 
 #div_card_img_first {
@@ -131,6 +131,15 @@ p {
     position: relative;
 }
 
+#mother_div_cartochka {
+    display: flex; 
+    justify-content: space-evenly; 
+    margin-top: -1vh; 
+    gap: 2vw;
+    border: px solid red;
+    
+}
+
 /*----------------------------------------------------------------------------------------------------*/
 
 #div_head_main {
@@ -179,4 +188,80 @@ header {
                 width: 40vw; 
                 height: 45vw;
                 z-index: -10;
+            }
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 540px) {
+                body {
+                    background: ;
+                    font-size: 14px;
+                }
+
+                .one {
+                    margin-top: -7vh;
+                }
+
+                #first_div_card {
+                    display: flex;
+                    align-items: center;
+                    height: 40vw;
+                    background-image: url(../img/3.png);
+                    background-size: cover;
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+                    box-shadow: 
+                        inset 5.21vw 0px 10vw 4vw black,
+                        inset 0px -5.21vw 10vw 4vw black;
+                        border: px solid yellow;
+                }
+
+                #thirty_div {
+                    border: 1px solid red;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10vw;
+                    z-index: 10;
+                    width: 100vw;
+                    height: 100vw;
+                    clip-path: polygon(0vw 0vw, 100vw 0vw, 100vw 125vw, 0vw 100vw);
+                }
+
+
+                #big_body_div_1 {
+                    margin-top: 0vh; 
+                    border: px solid orange; 
+                    display: flex; 
+                    flex-direction: column; 
+
+                    height: 180vw;
+                }
+
+
+                #mother_div_cartochka {
+                    display: flex; 
+                    justify-content: space-evenly; 
+                    margin-top: -1vh; 
+                    padding: 0; 
+                    border: 5px solid red;
+                    width: 80vw;
+                }
+
+                #div_cartochka {
+                    background: linear-gradient(140deg, rgba(54,23,97,0.41) 0%, rgba(45,25,73,1) 20%, rgba(44,18,80,0.3) 70%, rgba(44,18,80,0.1) 90%);
+                    display: flex; 
+                    border-radius: 1vw; 
+                    width: 40vw; 
+                    height: 30vw; 
+                    align-items: center;
+                    box-shadow: 0 -0.5vh 0px 0 #693B93;
+                    z-index: -2;
+                    position: relative;
+                    margin: 1vh;
+                }
+
             }
