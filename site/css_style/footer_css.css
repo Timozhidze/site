@@ -1,0 +1,19 @@
+#foot_template {
+                width: 80vw;
+                height: 24vw;
+                margin: auto;
+                margin-top: 5vw;
+                font-size: 3vh;
+
+                border: px solid red;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+.p_footer_contact {
+    color: #F0E6D6;
+    margin-left: 1vw
+}
+
+/*----------------------------------------------------------------------------------------------------*/
