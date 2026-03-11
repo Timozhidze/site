@@ -1,24 +1,22 @@
 body {
-            
-            font-family: "Comfortaa", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
 
-            margin: 0;
-            padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 
-            background: #11071f;
-            
-            color: #F0E6D6;
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-} 
+    margin: 0;
+    padding: 0;
+
+    background: #11071f;
+
+    color: #F0E6D6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 button {
-    width: 10rem;         
-    height: 3rem; 
     font-size: 2vh;
     background: #2C1250;
     border: 1px solid #7127BA;
@@ -31,12 +29,12 @@ button {
 }
 
 .two_icon {
-    width: 4vw; 
+    width: 4vw;
     height: 4vw;
 }
 
 .two_img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
@@ -48,10 +46,10 @@ button {
     flex-direction: column;
     width: 100%;
     height: 80vh;
-    background-image: url('../img/');
+    background-image: url('../img/bakcground_fon.jpeg');
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0 0 16vw 10vw black; 
+    box-shadow: inset 0 0 16vw 10vw black;
 }
 
 #thirty_div {
@@ -61,53 +59,64 @@ button {
     justify-content: center;
     margin-top: 0;
     z-index: 10;
-    width: 110rem;
-    height: 44vw;
+
+
 
 }
 
-        #thirty_div_wrap {
-            display: grid;
-            grid-template-columns: repeat(2, 2fr);
-            border: 1px solid red;
-            width: 70rem;
+.forth_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid blue
+}
 
-            height: 40rem;
-            
-            display: grid;
-            gap: 20px;
-            justify-items: center;
-            align-content: center;
-        }  
+#thirty_div_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    border: 1px solid red;
+
+
+    height: 40rem;
+
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
+}
 
 /* ---------------------------- */
 
 #div_card_img_first {
-                margin-left: 10%; 
-                width: 10rem; 
-                height: 6rem; 
-                border: 1px solid #7127BA;               
+    margin-left: 10%;
+    width: 10rem;
+    height: 6rem;
+    border: 1px solid #7127BA;
 }
 
 #div_cartochka {
-            display: flex; 
-            border-radius: 28px;
-            background: linear-gradient(140deg, rgba(54,23,97,0.41) 0%, rgba(45,25,73,1) 20%, rgba(44,18,80,0.3) 70%, rgba(44,18,80,0.1) 90%);
-            width: 26rem; 
-            height: 15rem; 
-            align-items: center;
-            box-shadow: 0 -0.5vh 0px 0 #693B93;
-            
+    display: flex;
+    border-radius: 28px;
+    background: linear-gradient(140deg, rgba(54, 23, 97, 0.41) 0%, rgba(45, 25, 73, 1) 20%, rgba(44, 18, 80, 0.3) 70%, rgba(44, 18, 80, 0.1) 90%);
+
+    flex-direction: column;
+
+    min-width: 30rem;
+
+    align-items: center;
+    box-shadow: 0 -0.5vh 0px 0 #693B93;
+
 }
 
 #div_card_img_second {
-            margin-left: 10%; 
-            border: 0px solid yellow; 
-            height: 100%; 
-            width: 100%; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-evenly;
+    margin-left: 10%;
+    border: 0px solid yellow;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -116,70 +125,67 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 1,5vw;
-}
 
 /*----------------------------------------------------------------------------------------------------*/
 
 #circle_font {
-            width: 6vw; 
-            height: 2vw; 
-            z-index: -1; 
-            position: absolute; 
-            margin-left: 10%; 
-            border-radius: 100%; 
-            margin-top: 5vw;
-            background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
+    width: 6vw;
+    height: 2vw;
+    z-index: -1;
+    position: absolute;
+    margin-left: 10%;
+    border-radius: 100%;
+    margin-top: 5vw;
+    background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
 }
 
 #p_card_first {
-                margin-top: 0%; 
-                margin-bottom: 0%; 
-                font-size: 2vw; 
-                border: 0px solid green;
-                color: #e60073;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    border: 0px solid green;
+    color: #e60073;
 }
 
 #p_card_second {
-                margin: 0; 
-                border: 0px solid green; 
-                font-size: 1vw;
+    margin: 0;
+    border: 0px solid green;
+    font-size: 1rem;
 }
 
 #mother_div_cartochka {
-    display: flex; 
-    justify-content: space-evenly; 
-    margin-top: -1vh; 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1vh;
     gap: 2vw;
     border: px solid red;
-    
+
 }
 
 /*----------------------------------------------------------------------------------------------------*/
 
 #div_head_main {
-                display: flex; 
-                justify-content: space-evenly; 
-                align-items: center; 
-                border: 0px solid red;
-                height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0px solid red;
+    height: 100%;
 
-                
-            }
-            
+
+}
+
 header {
-                background-color: #21082d;  
-                height: 14vh;
+    background-color: #21082d;
+    height: 14vh;
 
-            }
+}
 
 /*----------------------------------------------------------------------------------------------------*/
 
 #glowing_text {
     font-size: 3vw;
     text-align: center;
-    text-shadow: 
+    text-shadow:
         0 0 0.52vw #fff,
         0 0 1.04vw #fff,
         0 0 1.56vw #763CAC,
@@ -189,47 +195,53 @@ header {
         0 0 3.65vw #763CAC;
 }
 
-            #img_glowing {
-                
-                text-align: center;
-                border-radius: 50%; /* Скругление углов для создания круга */  
-                background-image: radial-gradient(farthest-corner at center, #763CAC 0%, transparent 72%);
-                width: 6vw; 
-                height: 2vw; 
-            }
-            #img_glow_circle {
-                text-align: center;
-                border-radius: 50%; /* Скругление углов для создания круга */  
-                background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
-                width: 40vw; 
-                height: 45vw;
-                z-index: -10;
-            }
+#img_glowing {
 
-                #big_body_div_1 {
-                    border: 5px solid orange; 
-                    display: flex; 
-                    flex-direction: column;
-                    align-items: center;
-                }
+    text-align: center;
+    border-radius: 50%;
+    /* Скругление углов для создания круга */
+    background-image: radial-gradient(farthest-corner at center, #763CAC 0%, transparent 72%);
+    width: 6vw;
+    height: 2vw;
+}
+
+#img_glow_circle {
+    text-align: center;
+    border-radius: 50%;
+    /* Скругление углов для создания круга */
+    background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
+    width: 40vw;
+    height: 45vw;
+    z-index: -10;
+}
+
+#big_body_div_1 {
+    border: 5px solid orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
-                #mother_div_cartochka {
-                    display: flex; 
-                    justify-content: space-evenly; 
-                    margin-top: -1vh; 
-                    padding: 0; 
-                    border: 5px solid red;
-                    width: 80vw;
-                }
+#mother_div_cartochka {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1vh;
+    padding: 0;
+    border: 5px solid red;
+    width: 80vw;
+}
 
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-@media (max-width: 740px) {
-                #thirty_div_wrap {
-                    grid-template-columns: 1fr;
-                }  
+@media (max-width: 440px) {
+    #thirty_div_wrap {
+        grid-template-columns: 1fr;
+    }
 }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
