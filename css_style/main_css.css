@@ -19,13 +19,24 @@ body {
 button {
     font-size: 2vh;
     background: #2C1250;
-    border: 1px solid #7127BA;
-    border-radius: 10px;
+    border: 2px solid #7127BA;
+    border-radius: 26px;
     box-shadow: 0 0.21vw 0.21vw 0 black;
     color: #F0E6D6;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    padding: 0.9rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0px 16px 16px 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 
 .two_icon {
@@ -89,10 +100,18 @@ button {
 /* ---------------------------- */
 
 #div_card_img_first {
-    margin-left: 10%;
-    width: 10rem;
-    height: 6rem;
-    border: 1px solid #7127BA;
+    margin: 10px;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border: px solid #7127BA;
+}
+
+.div_card_thirty {
+    margin: 10px;
+    min-width: 260px;
+    max-width: 340px;
+    overflow-wrap: break-word;
 }
 
 #div_cartochka {
@@ -111,12 +130,13 @@ button {
 
 #div_card_img_second {
     margin-left: 10%;
-    border: 0px solid yellow;
-    height: 100%;
-    width: 100%;
+    border: px solid yellow;
+
+    margin: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+    justify-content: center;
+    align-items: center;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -142,15 +162,15 @@ a {
 #p_card_first {
     margin-top: 0%;
     margin-bottom: 0%;
-
     border: 0px solid green;
     color: #e60073;
 }
 
 #p_card_second {
-    margin: 0;
-    border: 0px solid green;
+    border: px solid green;
     font-size: 1rem;
+    overflow-wrap: break-word;
+    line-height: 1.4;
 }
 
 #mother_div_cartochka {
@@ -237,11 +257,16 @@ header {
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
     #thirty_div_wrap {
         grid-template-columns: 1fr;
+    }
+
+    #div_card_img_second {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
-
