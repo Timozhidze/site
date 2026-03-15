@@ -1,0 +1,32 @@
+header {
+    background-color: #21082d;
+    padding: 2rem 4rem 2rem 4rem;
+    border-bottom: 1px solid #e60073;
+}
+
+#div_head_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid red;
+    height: 100%;
+}
+
+.div_head_main_first {
+    border: 0px solid white;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.div_head_main_second {
+    border: 0px solid white; width: 11vw; height: 7vh; display: flex; justify-content: center; align-items: center;
+}
+
+.p_header {
+    color: #F0E6D6;
+    margin-left: 1vw;
+    border: px solid yellow;
+    font-size: 1vw;
+}

@@ -8,10 +8,16 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- ====================================================================== -->
+
         <link rel="stylesheet" href="./css_style/main_css.css">
         <link rel="stylesheet" href="./css_style/footer_css.css">
-        
+        <link rel="stylesheet" href="./css_style/slider_css.css">
+        <link rel="stylesheet" href="./css_style/header_css.css">
 
+        <!-- ====================================================================== -->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +30,6 @@
             }
 
             /* Стили для мобильных устройств (ширина экрана меньше 600px) */
-            
 
         </style>
 
@@ -36,21 +41,15 @@
 
         <header>
             <div id="div_head_main">
-                
-                <div style="border: 0px solid white; width: 8vh; height: 8vh; display: flex; align-items: center;">
+                <div class="div_head_main_first">
                     <img style="width: 100%; height: 100%;" src="./img/logo-img.png" alt="">
                     <div style="margin-left: 3vw;">
-                        <p style="font-size: 1vw;">Портфолио</p>
+                        <p class="p_header">Портфолио</p>
                     </div>
                 </div>
-                
-                <div style="border: 0px solid white; width: 11vw; height: 7vh; display: flex; justify-content: center; align-items: center;">
-                    <a href="#"> 
-                        <p class="p_footer_contact" style="font-size: 1vw;">Услуги</p>
-                    </a>
-                    <a href="#"> 
-                        <p class="p_footer_contact" style="font-size: 1vw;">Связаться со мной</p>
-                    </a>
+                <div class="div_head_main_second">
+                    <a href="#"> <p class="p_header">Услуги</p> </a>
+                    <a href="#"> <p class="p_header">Связаться со мной</p> </a>
                 </div>
             </div>
         </header>
@@ -58,18 +57,11 @@
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
         <div id="big_body_div_1">
-
+            
             <!-- -------------------------------------------------------------------------------------- -->
-
             <div id="first_div_card" style="border: px solid red;">
 
                 <div style="display: flex; flex-direction: column; align-items: center; margin-top: 10vh;">
-
-                    <!--
-                    <div id="img_glowing" style="width: 20vw; height: 20vw;">
-                                <img style="width: 100%; height: 100%; border: 0px solid #7127BA; border-radius: 5px;" src="./img/icon_people.svg" alt="">       
-                    </div>
-                    -->
                 
                     <div class="one">
                         <div style="width: 46vw;">
@@ -78,15 +70,21 @@
                         </div>
                     </div>
 
-                    <div style="display: flex; margin-top: 2vh;">
+                    <div style="display: flex; margin-top: 2vh; gap: 1rem;">
                         <div class="two_icon">
-                            <img class="two_img" src="./img/telegram_icon_white.png" alt="">
+                            <a href="https://t.me/Timofey1559">
+                                <img class="two_img" src="./img/telegram_icon_white.png" alt="">
+                            </a>
                         </div>
                         <div class="two_icon">
-                            <img class="two_img" src="./img/vk_icon_white.png" alt="">
+                            <a href="https://t.me/Timofey1559">
+                                <img class="two_img" src="./img/vk_icon_white.png" alt="">
+                            </a>
                         </div>
                         <div class="two_icon">
-                            <img class="two_img" src="./img/gmail_icon_white.png" alt="">
+                            <a href="https://t.me/Timofey1559">
+                                <img class="two_img" src="./img/gmail_icon_white.png" alt="">
+                            </a>
                         </div>
                     </div>
 
@@ -101,19 +99,17 @@
 
                 <div class="forth_div">
 
-                    <p style="font-size: 2vw; color: #e60073;">Обо мне</p>
+                    <h1><p style="font-size: 2vw; color: #e60073;">Обо мне</p></h1>
 
                     <div id="thirty_div_wrap" >
 
                             <div id="div_cartochka">              
                                 
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
                                 <div id="div_card_img_second">
                                     <div id="div_card_img_first">
                                         <img src="./img/monitor_icon.png" alt="">
                                     </div>
+
                                     <div class="div_card_thirty">
                                         <h1 id="p_card_first">Опыт работы</h1>
                                         <p id="p_card_second">История моей трудовой деятельности и реализованные проекты.</p>
@@ -206,62 +202,104 @@
 
         </div>
 
+        <!-- --------------------------------------------------------------------------------------------- -->
+
+        <section class="slider-section">
+        
+            <div class="slider-container" id="sliderContainer">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide">
+                        <i class="fas fa-crown"></i>
+                        <h3>Премиум темная тема</h3>
+                        <p>Идеально для ночного просмотра — все элементы гармонируют с глубоким черным.</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fas fa-dragon"></i>
+                        <h3>Мифические существа</h3>
+                        <p>Вдохновение северными легендами и киберпанком в каждой детали.</p>
+                    </div>
+                    <div class="slide">
+                        <i class="fas fa-galaxy"></i>
+                        <h3>Глубокий космос</h3>
+                        <p>Фоны и градиенты напоминают далекие туманности и звездную пыль.</p>
+                    </div>
+                </div>
+                
+                <div class="slider-arrows">
+                    <button id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+         <script>
+        (function() {
+            // ========== СЛАЙДЕР (как был) ==========
+            const track = document.getElementById('sliderTrack');
+            const prevBtn = document.getElementById('prevSlide');
+            const nextBtn = document.getElementById('nextSlide');
+            const dots = document.querySelectorAll('.dot');
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+            let autoPlayInterval;
+            const AUTO_PLAY_INTERVAL = 4000;
+
+            function updateSlide(index) {
+                if (index < 0) index = totalSlides - 1;
+                if (index >= totalSlides) index = 0;
+                currentIndex = index;
+                const containerWidth = track.parentElement.clientWidth;
+                track.style.transform = `translateX(-${currentIndex * containerWidth}px)`;
+                dots.forEach((dot, i) => {
+                    if (i === currentIndex) dot.classList.add('active');
+                    else dot.classList.remove('active');
+                });
+            }
+
+            function nextSlide() { updateSlide(currentIndex + 1); }
+            function prevSlide() { updateSlide(currentIndex - 1); }
+            function restartAutoPlay() {
+                if (autoPlayInterval) clearInterval(autoPlayInterval);
+                autoPlayInterval = setInterval(nextSlide, AUTO_PLAY_INTERVAL);
+            }
+
+            nextBtn.addEventListener('click', () => { nextSlide(); restartAutoPlay(); });
+            prevBtn.addEventListener('click', () => { prevSlide(); restartAutoPlay(); });
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => { updateSlide(index); restartAutoPlay(); });
+            });
+            window.addEventListener('resize', () => updateSlide(currentIndex));
+            restartAutoPlay();
+
+            const sliderContainer = document.getElementById('sliderContainer');
+            sliderContainer.addEventListener('mouseenter', () => {
+                if (autoPlayInterval) { clearInterval(autoPlayInterval); autoPlayInterval = null; }
+            });
+            sliderContainer.addEventListener('mouseleave', () => {
+                if (!autoPlayInterval) autoPlayInterval = setInterval(nextSlide, AUTO_PLAY_INTERVAL);
+            });
+            updateSlide(0);
+
+            // Запускаем обновление при скролле
+            window.addEventListener('scroll', updateFactsOnScroll);
+            // И сразу применим для начального состояния
+            updateFactsOnScroll();
+        })();
+    </script>
+    <style>.slide { flex-shrink: 0; }</style>
+
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
         <footer id="foot_template">
 
-            <div style="width: vw; display: flex;">
-
-                <!--
-                    <div style="width: 50vw; border: px solid red; display: flex; justify-content: center; align-items: center;">
-                        
-                        <div style="width: 24vw; height: 24vw;">
-                            <img style="width: 100%; height: 100%;" src="./img/computer_icon_pink.png" alt="">
-                        </div>
-                    </div>
-                -->
-            
-                <div style="display: flex; flex-direction: column ; border: px solid white; width: 30vw;">
-
-                    <div>
-                        <p style="color: #e60073">Контакты для связи:</p>
-                    </div>
-                    
-                    <div style="width: 20vw; height: 8vh; border: px solid green; margin-top: 1vw;">
-                        <a style="display: flex" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/telegram_icon.png" alt="">
-                            </div>
-                            <p class="p_footer_contact">Tелеграмм</p>
-                        </a>
-                            
-                    </div>
-
-                    <div style="width: 20vw; height: 8vh; border: 0px solid green; margin-top: 1vw;">
-                        <a style="display: flex" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/vk_icon.png" alt="">
-                            </div>
-                            <p class="p_footer_contact">Вконтакте</p>
-                        </a>
-                            
-                    </div>
-                        
-                    <div style="width: 20vw; height: 8vh; border: 0px solid green; margin-top: 1vw;">
-                        <a style="display: flex" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/gmail_icon.png" alt="">
-                            </div>
-                            <p class="p_footer_contact">Gmail</p>
-                        </a>
-                            
-                    </div>
-                </div>
-
-            </div>
-                
-
-                <div style="display: flex; margin-top: 1vw; margin-left: 1vw; ">
+            <div style="display: flex; border: px solid #e60073; justify-content: center; align-items: center;">
                     <div>
                         
                         <div style="width: 3vw; height: 3vw;">
@@ -273,8 +311,42 @@
                     <div style="margin-left: 1vw;">
                         <p style="color: #e60073">© 2025 «МойСайт»</p>
                     </div>
+            </div>
+
+            <div style="width: vw; display: flex;">
+
+                <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1rem;">
+                    
+                    <div style="border: px solid green;">
+                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
+                            <div style="width: 8vh; height: 8vh">
+                                <img style="width: 100%; height: 100%" src="./img/telegram_icon.png" alt="">
+                            </div>
+                        </a>
+                            
+                    </div>
+
+                    <div style="border: px solid green;">
+                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
+                            <div style="width: 8vh; height: 8vh">
+                                <img style="width: 100%; height: 100%" src="./img/vk_icon.png" alt="">
+                            </div>
+                        </a>
+                            
+                    </div>
+                        
+                    <div style="border: px solid green;">
+                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
+                            <div style="width: 8vh; height: 8vh">
+                                <img style="width: 100%; height: 100%" src="./img/gmail_icon.png" alt="">
+                            </div>
+                        </a>
+                            
+                    </div>
                 </div>
-                
+
+            </div>
+            
         </footer>
 
         <!-- ----------------------------------------------------------------------------------------------------- -->

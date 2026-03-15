@@ -1,0 +1,130 @@
+/* === СЛАЙДЕР === */
+.slider-section {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+
+.slider-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #e4d0ff;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid #e60073;
+    background: #14131f;
+    box-shadow: 0 30px 40px #030104;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slide {
+    width: 91.8%;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #1e1b2b, #131023);
+    color: white;
+
+    
+}
+
+.slide i {
+    font-size: 4.5rem;
+    color: #ad84e8;
+    margin-bottom: 1.8rem;
+    background: #2c2540;
+    padding: 0.8rem;
+    border-radius: 70px;
+}
+
+.slide h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.slide p {
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #bfb0df;
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.slider-arrows button {
+    pointer-events: auto;
+    background: rgba(40, 35, 65, 0.7);
+    border: 2px solid #e60073;
+    font-size: 2.5rem;
+    color: #eee4ff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.slider-arrows button:hover {
+    background: #5f4b96;
+    border-color: #c7afff;
+    transform: scale(1.08);
+    color: white;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.slider-dots .dot {
+    pointer-events: auto;
+    width: 18px;
+    height: 18px;
+    background: #e60073;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px #221e30;
+}
+
+.slider-dots .dot.active {
+    background: #e60073;
+    transform: scale(1.3);
+    border-color: #f0e2ff;
+    box-shadow: 0 0 15px #c69eff;
+}
