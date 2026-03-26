@@ -16,8 +16,6 @@
         <link rel="stylesheet" href="./css_style/header_css.css">
 
         <!-- ====================================================================== -->
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,100 +198,72 @@
                 Услуги
             -->
 
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4"
+                        class="carousel__prev"></a>
+                        <a href="#carousel__slide2" class="carousel__next"></a>
+                    </div>
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide4"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1"
+                        class="carousel__next">Go to first slide</a>
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                        class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                        class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                        class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                        class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                    </ol>
+                </aside>
+            </section>
+
         </div>
 
         <!-- --------------------------------------------------------------------------------------------- -->
 
-        <section class="slider-section">
         
-            <div class="slider-container" id="sliderContainer">
-                <div class="slider-track" id="sliderTrack">
-                    <div class="slide">
-                        <i class="fas fa-crown"></i>
-                        <h3>Премиум темная тема</h3>
-                        <p>Идеально для ночного просмотра — все элементы гармонируют с глубоким черным.</p>
-                    </div>
-                    <div class="slide">
-                        <i class="fas fa-dragon"></i>
-                        <h3>Мифические существа</h3>
-                        <p>Вдохновение северными легендами и киберпанком в каждой детали.</p>
-                    </div>
-                    <div class="slide">
-                        <i class="fas fa-galaxy"></i>
-                        <h3>Глубокий космос</h3>
-                        <p>Фоны и градиенты напоминают далекие туманности и звездную пыль.</p>
-                    </div>
-                </div>
-                
-                <div class="slider-arrows">
-                    <button id="prevSlide"><i class="fas fa-chevron-left"></i></button>
-                    <button id="nextSlide"><i class="fas fa-chevron-right"></i></button>
-                </div>
-
-                <div class="slider-dots" id="sliderDots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                </div>
-            </div>
-        </section>
-
-         <script>
-        (function() {
-            // ========== СЛАЙДЕР (как был) ==========
-            const track = document.getElementById('sliderTrack');
-            const prevBtn = document.getElementById('prevSlide');
-            const nextBtn = document.getElementById('nextSlide');
-            const dots = document.querySelectorAll('.dot');
-            const slides = document.querySelectorAll('.slide');
-            const totalSlides = slides.length;
-            let currentIndex = 0;
-            let autoPlayInterval;
-            const AUTO_PLAY_INTERVAL = 4000;
-
-            function updateSlide(index) {
-                if (index < 0) index = totalSlides - 1;
-                if (index >= totalSlides) index = 0;
-                currentIndex = index;
-                const containerWidth = track.parentElement.clientWidth;
-                track.style.transform = `translateX(-${currentIndex * containerWidth}px)`;
-                dots.forEach((dot, i) => {
-                    if (i === currentIndex) dot.classList.add('active');
-                    else dot.classList.remove('active');
-                });
-            }
-
-            function nextSlide() { updateSlide(currentIndex + 1); }
-            function prevSlide() { updateSlide(currentIndex - 1); }
-            function restartAutoPlay() {
-                if (autoPlayInterval) clearInterval(autoPlayInterval);
-                autoPlayInterval = setInterval(nextSlide, AUTO_PLAY_INTERVAL);
-            }
-
-            nextBtn.addEventListener('click', () => { nextSlide(); restartAutoPlay(); });
-            prevBtn.addEventListener('click', () => { prevSlide(); restartAutoPlay(); });
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => { updateSlide(index); restartAutoPlay(); });
-            });
-            window.addEventListener('resize', () => updateSlide(currentIndex));
-            restartAutoPlay();
-
-            const sliderContainer = document.getElementById('sliderContainer');
-            sliderContainer.addEventListener('mouseenter', () => {
-                if (autoPlayInterval) { clearInterval(autoPlayInterval); autoPlayInterval = null; }
-            });
-            sliderContainer.addEventListener('mouseleave', () => {
-                if (!autoPlayInterval) autoPlayInterval = setInterval(nextSlide, AUTO_PLAY_INTERVAL);
-            });
-            updateSlide(0);
-
-            // Запускаем обновление при скролле
-            window.addEventListener('scroll', updateFactsOnScroll);
-            // И сразу применим для начального состояния
-            updateFactsOnScroll();
-        })();
-    </script>
-    <style>.slide { flex-shrink: 0; }</style>
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
