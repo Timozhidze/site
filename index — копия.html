@@ -15,15 +15,21 @@
 
         <style>      
         
-            #one {
-                width: 1000px; height: 1000px; border: 1px solid black; display: grid; grid-template-columns: repeat(2, 1fr);
-            }
+    
 
-            @media (max-width: 740px) {
-                #one {
-                grid-template-columns: 1fr;
-            }
-            }
+        /* =================================================================================== */
+
+
+        .my-element {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: transform 0.5s ease; /* Плавный переход для transform */
+        }
+
+        .shifted {
+            transform: translateX(200px); /* Сдвиг вправо на 200px */}
+        
         </style>
 
     </head>
@@ -32,14 +38,30 @@
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <div id="one">
-            <div style="border: 1px solid black;">fffff</div>
-            <div style="border: 1px solid black;">aaaaa</div>
-            <div style="border: 1px solid black;">bbbbb</div>
-            <div style="border: 1px solid black;">eeeee</div>
-        </div>
+        <div class="my-element" id="myElement"></div>
+        <button id="myButton">Сдвинуть элемент</button>
+
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <script src="script.js">
+
+            // Получаем ссылки на наши HTML-элементы
+            const myElement = document.getElementById('myElement');
+            const myButton = document.getElementById('myButton');
+
+            // Добавляем обработчик события "click" к кнопке
+            myButton.addEventListener('click', function() {
+            // Переключаем класс 'shifted' у элемента
+            // Если класс уже есть, он будет удален, если нет - добавлен
+            myElement.classList.toggle('shifted');
+            });
+            
+        </script>
+        
+        
+        
+
 
     </body>
 
