@@ -198,62 +198,63 @@
                 Услуги
             -->
 
-            <section class="carousel">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide4"class="carousel__prev"></a>
-                            <a href="#carousel__slide2" class="carousel__next"></a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide3"
-                        tabindex="0"
-                        class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4"
-                        tabindex="0"
-                        class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1"
-                        class="carousel__next">Go to first slide</a>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1"
-                        class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2"
-                        class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3"
-                        class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4"
-                        class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                    </ol>
-                </aside>
+            <section class="container">
+                <div class="moving-element" style="background-color: green; display: flex; margin-left:-200rem;">
+                    <div style="background-color: blue; width: 100rem; height: 100%;">-3</div>
+                    <div style="background-color: green; width: 100rem; height: 100%;">-2</div>
+                    <div style="background-color: blue; width: 100rem; height: 100%;">1</div>
+                    <div style="background-color: green; width: 100rem; height: 100%;">2</div>
+                    <div style="background-color: blue; width: 100rem; height: 100%;">3</div>
+                </div>
+                
+                <div class="div_but_slider">
+                    <button class="but_slider" id="moveLeftBtn">Влево</button>
+                    <button class="but_slider" id="moveRightBtn">Вправо</button>
+                </div>
+                
+
             </section>
 
+            
+
         </div>
+
+        <script>
+
+            const moveRightBtn = document.getElementById('moveRightBtn');
+            const moveLeftBtn = document.getElementById('moveLeftBtn');
+            const movingElement = document.querySelector('.moving-element');
+
+            const positions = ['translateX(200rem)', 'translateX(100rem)', 'translateX(0)', 'translateX(-100rem)', 'translateX(-200rem)'];
+            let currentIndex = 2; // индекс для 0
+
+            function applyPosition() {
+                // Удаляем все возможные классы, но проще установить transform напрямую
+                movingElement.style.transform = positions[currentIndex];
+            }
+
+            moveRightBtn.addEventListener('click', () => {
+                if (currentIndex < positions.length - 1) {
+                    currentIndex++; // двигаемся к +80
+                } else {
+                    currentIndex = 2; // если на максимуме, сброс в 0? или зациклить?
+                    // По вашей логике: 80 → 0
+                }
+                applyPosition();
+            });
+
+            moveLeftBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--; // двигаемся к -80
+                } else {
+                    currentIndex = 2; // если на -80, то сброс в 0
+                }
+                applyPosition();
+            });
+
+        </script>
+
+
 
         <!-- --------------------------------------------------------------------------------------------- -->
 

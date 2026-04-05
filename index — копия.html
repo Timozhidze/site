@@ -20,16 +20,35 @@
         /* =================================================================================== */
 
 
-        .my-element {
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            transition: transform 0.5s ease; /* Плавный переход для transform */
-        }
+            .container {
+                width: 150px;
+                height: 200px;
+                border: 2px solid black;
+                overflow: hidden;   /* скрывает всё, что выходит за границы */
+                position: relative; /* можно не ставить, но для ясности */
+            }
 
-        .shifted {
-            transform: translateX(200px); /* Сдвиг вправо на 200px */}
+            .moving-element {
+                width: 100px;
+                height: 100px;
+                background-color: coral;
+                transition: transform 0.3s ease;
+            }
+
+            /* Классы для смещения */
+            .translate-0 {
+                transform: translateX(0);
+            }
+            .translate-1 {
+                transform: translateX(40px);
+            }
+            .translate-2 {
+                transform: translateX(80px);
+            }
         
+
+
+
         </style>
 
     </head>
@@ -38,23 +57,25 @@
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <div class="my-element" id="myElement"></div>
-        <button id="myButton">Сдвинуть элемент</button>
-
+        <div class="container">
+            <div class="moving-element"></div>
+        </div>
+        <button id="moveBtn">Сдвинуть</button>
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <script src="script.js">
+        <script>
 
-            // Получаем ссылки на наши HTML-элементы
-            const myElement = document.getElementById('myElement');
-            const myButton = document.getElementById('myButton');
+            const button = document.getElementById('moveBtn');
+            const movingElement = document.querySelector('.moving-element');
 
-            // Добавляем обработчик события "click" к кнопке
-            myButton.addEventListener('click', function() {
-            // Переключаем класс 'shifted' у элемента
-            // Если класс уже есть, он будет удален, если нет - добавлен
-            myElement.classList.toggle('shifted');
+            const translateClasses = ['translate-0', 'translate-1', 'translate-2'];
+            let step = 0;
+
+            button.addEventListener('click', () => {
+                step = (step + 1) % translateClasses.length;
+                translateClasses.forEach(cls => movingElement.classList.remove(cls));
+                movingElement.classList.add(translateClasses[step]);
             });
             
         </script>
