@@ -1,5 +1,6 @@
 header {
-    background-color: #21082d;
+    background: linear-gradient(145deg, #0d0113 0%, #330c49 40%, #1e0b3a 70%, #310357 100%);
+    /* background: linear-gradient(145deg, #190324 0%, #1a0b38 40%, #2c012a 70%, #11101c 100%); */
     padding: 2rem 4rem 2rem 4rem;
     border-bottom: 1px solid #e60073;
 }
@@ -21,7 +22,12 @@ header {
 }
 
 .div_head_main_second {
-    border: 0px solid white; width: 11vw; height: 7vh; display: flex; justify-content: center; align-items: center;
+    border: 0px solid white;
+    width: 11vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .p_header {
@@ -29,4 +35,17 @@ header {
     margin-left: 1vw;
     border: px solid yellow;
     font-size: 1vw;
+}
+
+.head_div_img {
+    width: 4vw;
+    height: 4vw;
+    border: 4px solid white;
+    border-radius: 25%;
+    transition: 0.2s;
+}
+
+.head_div_img:hover {
+    transform: scale(1.1);
+    border-color: #7127BA;
 }

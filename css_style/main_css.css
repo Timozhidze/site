@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background: #11071f;
+    background: #0a0412;
 
     color: #F0E6D6;
     display: flex;
@@ -32,16 +32,18 @@ button {
     font-weight: 600;
     cursor: pointer;
     margin: 0px 16px 16px 16px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border-color: #e60073;
 }
 
 img {
     width: 100%;
     height: 100%;
-}
-
-.two_icon {
-    width: 4vw;
-    height: 4vw;
 }
 
 .two_img {
@@ -60,7 +62,7 @@ img {
     background-image: url('../img/bakcground_fon.jpeg');
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0 0 160px 100px black;
+    box-shadow: inset 0 0 12vw 8vw black;
 
     border-bottom: 1px solid #e60073;
 }
@@ -128,6 +130,11 @@ img {
 
     align-items: center;
     box-shadow: 0 -0.5vh 0px 0 #693B93;
+    transition: 0.2s;
+}
+
+#div_cartochka:hover {
+    box-shadow: 0 -0.5vh 0 0 #e60073;
 
 }
 
@@ -165,7 +172,7 @@ a {
 }
 
 #p_card_first {
-    
+
     margin-bottom: 0%;
     border: 0px solid green;
     color: #e60073;
@@ -204,6 +211,19 @@ a {
 
 #glowing_text {
     font-size: 3vw;
+    text-align: center;
+    text-shadow:
+        0 0 0.52vw #fff,
+        0 0 1.04vw #fff,
+        0 0 1.56vw #763CAC,
+        0 0 2.08vw #763CAC,
+        0 0 2.60vw #763CAC,
+        0 0 3.12vw #763CAC,
+        0 0 3.65vw #763CAC;
+}
+
+#glowing_text_mini {
+    font-size: 1.5vw;
     text-align: center;
     text-shadow:
         0 0 0.52vw #fff,
@@ -268,8 +288,8 @@ a {
         text-align: center;
     }
 
-    
-    
+
+
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/

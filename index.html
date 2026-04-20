@@ -40,7 +40,7 @@
         <header>
             <div id="div_head_main">
                 <div class="div_head_main_first">
-                    <img style="width: 100%; height: 100%;" src="./img/logo-img.png" alt="">
+                    <img src="./img/logo-img.png" alt="">
                     <div style="margin-left: 3vw;">
                         <p class="p_header">Портфолио</p>
                     </div>
@@ -59,27 +59,27 @@
             <!-- -------------------------------------------------------------------------------------- -->
             <div id="first_div_card" style="border: px solid red;">
 
-                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 10vh;">
+                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 18vh;">
                 
                     <div class="one">
                         <div style="width: 46vw;">
-                            <p id="glowing_text">Привет, ты на моем сайте портфолио!</p>
-                            <p id="glowing_text">Мне нравится frontend!</p>
+                            <p id="glowing_text">Добро пожаловать на сайт</p>
+                            <p id="glowing_text_mini">Стиль, развитие, веб-разработка</p>
                         </div>
                     </div>
 
-                    <div style="display: flex; margin-top: 2vh; gap: 1rem;">
-                        <div class="two_icon">
+                    <div style="display: flex; margin-top: 2vh; justify-content: space-between; width:18vw; height: 6vw;">
+                        <div class="head_div_img">
                             <a href="https://t.me/Timofey1559">
                                 <img class="two_img" src="./img/telegram_icon_white.png" alt="">
                             </a>
                         </div>
-                        <div class="two_icon">
+                        <div class="head_div_img">
                             <a href="https://t.me/Timofey1559">
                                 <img class="two_img" src="./img/vk_icon_white.png" alt="">
                             </a>
                         </div>
-                        <div class="two_icon">
+                        <div class="head_div_img">
                             <a href="https://t.me/Timofey1559">
                                 <img class="two_img" src="./img/gmail_icon_white.png" alt="">
                             </a>
@@ -199,17 +199,81 @@
             -->
 
             <section class="container">
-                <div class="moving-element" style="background-color: green; display: flex; margin-left:-200rem;">
-                    <div style="background-color: blue; width: 100rem; height: 100%;">-3</div>
-                    <div style="background-color: green; width: 100rem; height: 100%;">-2</div>
-                    <div style="background-color: blue; width: 100rem; height: 100%;">1</div>
-                    <div style="background-color: green; width: 100rem; height: 100%;">2</div>
-                    <div style="background-color: blue; width: 100rem; height: 100%;">3</div>
+                <div class="moving-element">
+                    <div class="div_slider">
+                        <div class="div_img">
+                            <img src="./img/logo-img.png" alt="">
+                        </div>
+                        <div>
+                            <p>Заголовок</p>
+                        </div>
+                        <div>
+                            <p>Текст заголовка</p>
+                        </div>
+                    </div>
+
+                    <div class="div_slider">
+                        <div class="div_img">
+                            <img src="./img/logo-img.png" alt="">
+                        </div>
+                        <div>
+                            <p>Заголовок</p>
+                        </div>
+                        <div>
+                            <p>Текст заголовка</p>
+                        </div>
+                    </div>
+<!-- ----------------------------------------------------------------------------------------------------- -->
+                    <div class="div_slider" >
+                        <div style="display: flex; flex-direction: row; border: 3px solid red; width: 80%; justify-content: center;">
+                            <div class="div_img" style="border: 1px solid yellow;  width: 20rem; height: 24rem;">
+                                <img src="./img/logo-img.png" alt="">
+                            </div>
+                            <div style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid green;">
+                                <div style="border: 1px solid yellow;">
+                                    <p>Стиль</p>
+                                </div>
+                                <div style="border: 1px solid yellow;">
+                                    <p>Стиль - это не когда просто красиво. Это когда всё работает вместе как единое целое.
+Создание стиля сайта начинается с простоты: все кнопки выглядят одинаково, все заголовки — одним шрифтом, отступы везде одинаковые. Никакой путаницы. Каждая деталь на своём месте, и её легко найти. Если нужно что-то поменять — меняется в одном месте, а не по всему сайту. Так сайт выглядит аккуратным, а работать с ним — одно удовольствие.
+Поэтому хороший стиль — это не просто картинка. Это удобство и предсказуемость. И я создаю это.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+                    <div class="div_slider">
+                       <div class="div_img">
+                            <img src="./img/logo-img.png" alt="">
+                        </div>
+                        <div>
+                            <p>Заголовок</p>
+                        </div>
+                        <div>
+                            <p>Текст заголовка</p>
+                        </div>
+                    </div>
+
+                    <div class="div_slider">
+                        <div class="div_img">
+                            <img src="./img/logo-img.png" alt="">
+                        </div>
+                        <div>
+                            <p>Заголовок</p>
+                        </div>
+                        <div>
+                            <p>Текст заголовка</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="div_but_slider">
-                    <button class="but_slider" id="moveLeftBtn">Влево</button>
-                    <button class="but_slider" id="moveRightBtn">Вправо</button>
+                    <button class="but_slider" id="moveLeftBtn">
+                        <img src="./img/left-arrow.png" alt="">
+                    </button>
+                    <button class="but_slider" id="moveRightBtn">
+                        <img src="./img/right-arrow.png" alt="">
+                    </button>
                 </div>
                 
 
@@ -225,40 +289,32 @@
             const moveLeftBtn = document.getElementById('moveLeftBtn');
             const movingElement = document.querySelector('.moving-element');
 
-            const positions = ['translateX(200rem)', 'translateX(100rem)', 'translateX(0)', 'translateX(-100rem)', 'translateX(-200rem)'];
+            const positions = ['translateX(150rem)', 'translateX(75rem)', 'translateX(0)', 'translateX(-75rem)', 'translateX(-150rem)'];
             let currentIndex = 2; // индекс для 0
 
             function applyPosition() {
-                // Удаляем все возможные классы, но проще установить transform напрямую
                 movingElement.style.transform = positions[currentIndex];
             }
 
             moveRightBtn.addEventListener('click', () => {
                 if (currentIndex < positions.length - 1) {
-                    currentIndex++; // двигаемся к +80
+                    currentIndex++; 
                 } else {
-                    currentIndex = 2; // если на максимуме, сброс в 0? или зациклить?
-                    // По вашей логике: 80 → 0
+                    currentIndex = 2; 
                 }
                 applyPosition();
             });
 
             moveLeftBtn.addEventListener('click', () => {
                 if (currentIndex > 0) {
-                    currentIndex--; // двигаемся к -80
+                    currentIndex--; 
                 } else {
-                    currentIndex = 2; // если на -80, то сброс в 0
+                    currentIndex = 2; 
                 }
                 applyPosition();
             });
 
         </script>
-
-
-
-        <!-- --------------------------------------------------------------------------------------------- -->
-
-        
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -266,7 +322,7 @@
 
             <div style="display: flex; border: px solid #e60073; justify-content: center; align-items: center;">
                     <div>
-                        <div style="width: 3vw; height: 3vw;">
+                        <div style="width: 4vw; height: 4vw;">
                             <img style="width: 100%; height: 100%;" src="./img/logo-img-pink.png" alt="">
                         </div>
                     </div>
@@ -280,28 +336,28 @@
 
                 <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1rem;">
                     
-                    <div style="border: px solid green;">
+                    <div>
                         <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/telegram_icon.png" alt="">
+                            <div class="foot_div_img">
+                                <img src="./img/telegram_icon.png" alt="">
                             </div>
                         </a>
                             
                     </div>
 
-                    <div style="border: px solid green;">
+                    <div>
                         <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/vk_icon.png" alt="">
+                            <div class="foot_div_img">
+                                <img src="./img/vk_icon.png" alt="">
                             </div>
                         </a>
                             
                     </div>
                         
-                    <div style="border: px solid green;">
+                    <div>
                         <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/gmail_icon.png" alt="">
+                            <div class="foot_div_img">
+                                <img src="./img/gmail_icon.png" alt="">
                             </div>
                         </a>
                             
