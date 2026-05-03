@@ -40,7 +40,7 @@ header {
 .head_div_img {
     width: 4vw;
     height: 4vw;
-    border: 4px solid white;
+    border: 0.3vw solid white;
     border-radius: 25%;
     transition: 0.2s;
 }
@@ -48,4 +48,12 @@ header {
 .head_div_img:hover {
     transform: scale(1.1);
     border-color: #7127BA;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+@media (max-width: 1000px) {
+    header {
+        padding: 1rem 4rem 1rem 4rem;
+    }
 }

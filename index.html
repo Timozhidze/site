@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="./css_style/footer_css.css">
         <link rel="stylesheet" href="./css_style/slider_css.css">
         <link rel="stylesheet" href="./css_style/header_css.css">
+        <link rel="stylesheet" href="./css_style/css_style_but_OnUp.css">
 
         <!-- ====================================================================== -->
 
@@ -21,13 +22,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-        <style>      
-        
+        <style>
             .one {
                 margin-top: 1wh;
             }
-
-            /* Стили для мобильных устройств (ширина экрана меньше 600px) */
 
         </style>
 
@@ -46,8 +44,12 @@
                     </div>
                 </div>
                 <div class="div_head_main_second">
-                    <a href="#"> <p class="p_header">Услуги</p> </a>
-                    <a href="#"> <p class="p_header">Связаться со мной</p> </a>
+                    <a href="#">
+                        <p class="p_header">Услуги</p>
+                    </a>
+                    <a href="#">
+                        <p class="p_header">Связаться со мной</p>
+                    </a>
                 </div>
             </div>
         </header>
@@ -55,12 +57,26 @@
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
         <div id="big_body_div_1">
-            
+
+            <button id="goTopBtn" title="Наверх">↑</button>
+
+            <script>
+
+                const btn = document.getElementById('goTopBtn');
+                window.addEventListener('scroll', () => {
+                    btn.classList.toggle('show', window.scrollY > 200);
+                });
+                btn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+            </script>
+
             <!-- -------------------------------------------------------------------------------------- -->
             <div id="first_div_card" style="border: px solid red;">
 
                 <div style="display: flex; flex-direction: column; align-items: center; margin-top: 18vh;">
-                
+
                     <div class="one">
                         <div style="width: 46vw;">
                             <p id="glowing_text">Добро пожаловать на сайт</p>
@@ -68,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div style="display: flex; margin-top: 2vh; justify-content: space-between; width:18vw; height: 6vw;">
+                    <div style="display: flex; margin-top: 2vh; justify-content: space-between; width: 22vw; height: 6vw;">
                         <div class="head_div_img">
                             <a href="https://t.me/Timofey1559">
                                 <img class="two_img" src="./img/telegram_icon_white.png" alt="">
@@ -84,6 +100,12 @@
                                 <img class="two_img" src="./img/gmail_icon_white.png" alt="">
                             </a>
                         </div>
+
+                        <div class="head_div_img">
+                            <a href="https://t.me/Timofey1559">
+                                <img class="two_img" src="./img/gmail_icon_white.png" alt="">
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -93,110 +115,113 @@
 
             <!-- ----------------------------------------------------------------------------------------------------- -->
 
-            <div id="thirty_div" >
+            <div id="thirty_div">
 
                 <div class="forth_div">
 
-                    <h1><p style="font-size: 2vw; color: #e60073;">Обо мне</p></h1>
+                    <h1>
+                        <p style="font-size: 2vw; color: #e60073;">Обо мне</p>
+                    </h1>
 
-                    <div id="thirty_div_wrap" >
+                    <div id="thirty_div_wrap">
 
-                            <div id="div_cartochka">              
-                                
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/monitor_icon.png" alt="">
-                                    </div>
+                        <div id="div_cartochka">
 
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Опыт работы</h1>
-                                        <p id="p_card_second">История моей трудовой деятельности и реализованные проекты.</p>
-                                    </div>
-                                    
-                                    
+                            <div id="div_card_img_second">
+                                <div id="div_card_img_first">
+                                    <img src="./img/monitor_icon.png" alt="">
                                 </div>
-                                <button>Узнать больше</button>
-                            </div>
-                            
-                            <div id="div_cartochka">              
-                                
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/icon_sertificate.png" alt="">
-                                    </div>
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Навыки</h1>
-                                        <p id="p_card_second">Инструменты и технологии, которыми я владею на профессиональном уровне.</p>
-                                    </div>
-                                    
-                                    
+
+                                <div class="div_card_thirty">
+                                    <h1 id="p_card_first">Опыт работы</h1>
+                                    <p id="p_card_second">История моей трудовой деятельности и реализованные проекты.</p>
                                 </div>
-                                <button>Узнать больше</button>
+
+
                             </div>
+                            <button title="Узнать больше"><a href="./pages/work.html">Узнать больше</a></button>
+                        </div>
+
+                        <div id="div_cartochka">
+
+                            <!--
+                                        <div id="circle_font"></div>
+                                    -->
+                            <div id="div_card_img_second">
+                                <div id="div_card_img_first">
+                                    <img src="./img/icon_sertificate.png" alt="">
+                                </div>
+                                <div class="div_card_thirty">
+                                    <h1 id="p_card_first">Навыки</h1>
+                                    <p id="p_card_second">Инструменты и технологии, которыми я владею на профессиональном
+                                        уровне.</p>
+                                </div>
+
+
+                            </div>
+                            <button title="Узнать больше">Узнать больше</button>
+                        </div>
 
 
                         <!--
-                        <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
-                            <div id="img_glow_circle" ></div>
+                            <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
+                                <div id="img_glow_circle" ></div>
+                            </div>
+                            -->
+
+
+                        <div id="div_cartochka">
+
+                            <!--
+                                        <div id="circle_font"></div>
+                                    -->
+                            <div id="div_card_img_second">
+                                <div id="div_card_img_first">
+                                    <img src="./img/icon_sertificate.png" alt="">
+                                </div>
+                                <div class="div_card_thirty">
+                                    <h1 id="p_card_first">Образование</h1>
+                                    <p id="p_card_second">Базовое и дополнительное профессиональное обучение.</p>
+                                </div>
+
+
+                            </div>
+                            <button title="Узнать больше">Узнать больше</button>
                         </div>
-                        -->
-                        
 
-                            <div id="div_cartochka">              
-                                
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/icon_sertificate.png" alt="">
-                                    </div>
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Образование</h1>
-                                        <p id="p_card_second">Базовое и дополнительное профессиональное обучение.</p>
-                                    </div>
-                                    
-                                    
+                        <div id="div_cartochka">
+
+                            <!--
+                                        <div id="circle_font"></div>
+                                    -->
+                            <div id="div_card_img_second">
+                                <div id="div_card_img_first">
+                                    <img src="./img/monitor_icon.png" alt="">
                                 </div>
-                                <button>Узнать больше</button>
-                            </div>
-
-                            <div id="div_cartochka">              
-                                
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/monitor_icon.png" alt="">
-                                    </div>
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Услуги</h1>
-                                        <p id="p_card_second">Направления сотрудничества и варианты рабочих задач.</p>
-                                    </div>
-                                    
-                                    
+                                <div class="div_card_thirty">
+                                    <h1 id="p_card_first">Услуги</h1>
+                                    <p id="p_card_second">Направления сотрудничества и варианты рабочих задач.</p>
                                 </div>
-                                <button>Узнать больше</button>
-                            </div>
 
-                    
+
+                            </div>
+                            <button title="Узнать больше">Узнать больше</button>
+                        </div>
+
+
 
                     </div>
 
                 </div>
-            
+
             </div>
 
             <!--
-                Опыт работы
-                Навыки
-                Образование
-                Услуги
-            -->
+                    Опыт работы
+                    Навыки
+                    Образование
+                    Услуги
+                -->
 
             <section class="container">
                 <div class="moving-element">
@@ -223,50 +248,74 @@
                             <p>Текст заголовка</p>
                         </div>
                     </div>
-<!-- ----------------------------------------------------------------------------------------------------- -->
-                    <div class="div_slider" >
+                    <!-- ----------------------------------------------------------------------------------------------------- -->
+                    <div class="div_slider">
                         <div style="display: flex; flex-direction: row; border: 3px solid red; width: 80%; justify-content: center;">
                             <div class="div_img" style="border: 1px solid yellow;  width: 20rem; height: 24rem;">
                                 <img src="./img/logo-img.png" alt="">
                             </div>
-                            <div style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid green;">
+                            <div
+                                style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid green;">
                                 <div style="border: 1px solid yellow;">
                                     <p>Стиль</p>
                                 </div>
                                 <div style="border: 1px solid yellow;">
                                     <p>Стиль - это не когда просто красиво. Это когда всё работает вместе как единое целое.
-Создание стиля сайта начинается с простоты: все кнопки выглядят одинаково, все заголовки — одним шрифтом, отступы везде одинаковые. Никакой путаницы. Каждая деталь на своём месте, и её легко найти. Если нужно что-то поменять — меняется в одном месте, а не по всему сайту. Так сайт выглядит аккуратным, а работать с ним — одно удовольствие.
-Поэтому хороший стиль — это не просто картинка. Это удобство и предсказуемость. И я создаю это.</p>
+                                        Создание стиля сайта начинается с простоты: все кнопки выглядят одинаково, все
+                                        заголовки — одним шрифтом, отступы везде одинаковые. Никакой путаницы. Каждая деталь
+                                        на своём месте, и её легко найти.
+                                        Поэтому хороший стиль — это не просто картинка. Это удобство и предсказуемость. И я
+                                        создаю это.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-<!-- ------------------------------------------------------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------------------------------------------------------- -->
                     <div class="div_slider">
-                       <div class="div_img">
-                            <img src="./img/logo-img.png" alt="">
-                        </div>
-                        <div>
-                            <p>Заголовок</p>
-                        </div>
-                        <div>
-                            <p>Текст заголовка</p>
+                        <div style="display: flex; flex-direction: row; border: 3px solid red; width: 80%; justify-content: center;">
+                            <div class="div_img" style="border: 1px solid yellow;  width: 20rem; height: 26rem;">
+                                <img src="./img/img_web_design.jpg" alt="">
+                            </div>
+                            <div
+                                style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid green;">
+                                <div style="border: 1px solid yellow;">
+                                    <p>Стиль</p>
+                                </div>
+                                <div style="border: 1px solid yellow;">
+                                    <p>Стиль - это не когда просто красиво. Это когда всё работает вместе как единое целое.
+                                        Создание стиля сайта начинается с простоты: все кнопки выглядят одинаково, все
+                                        заголовки — одним шрифтом, отступы везде одинаковые. Никакой путаницы. Каждая деталь
+                                        на своём месте, и её легко найти.
+                                        Поэтому хороший стиль — это не просто картинка. Это удобство и предсказуемость. И я
+                                        создаю это.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                    <!-- ------------------------------------------------------------------------------------------------------- -->
                     <div class="div_slider">
-                        <div class="div_img">
-                            <img src="./img/logo-img.png" alt="">
-                        </div>
-                        <div>
-                            <p>Заголовок</p>
-                        </div>
-                        <div>
-                            <p>Текст заголовка</p>
+                        <div style="display: flex; flex-direction: row; border: 3px solid red; width: 80%; justify-content: center;">
+                            <div class="div_img" style="border: 1px solid yellow;  width: 20rem; height: 26rem;">
+                                <img src="./img/img_web_design.jpg" alt="">
+                            </div>
+                            <div
+                                style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid green;">
+                                <div style="border: 1px solid yellow;">
+                                    <p>Стиль</p>
+                                </div>
+                                <div style="border: 1px solid yellow;">
+                                    <p>Стиль - это не когда просто красиво. Это когда всё работает вместе как единое целое.
+                                        Создание стиля сайта начинается с простоты: все кнопки выглядят одинаково, все
+                                        заголовки — одним шрифтом, отступы везде одинаковые. Никакой путаницы. Каждая деталь
+                                        на своём месте, и её легко найти.
+                                        Поэтому хороший стиль — это не просто картинка. Это удобство и предсказуемость. И я
+                                        создаю это.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+                <!-- ------------------------------------------------------------------------------------------------------- -->
                 <div class="div_but_slider">
                     <button class="but_slider" id="moveLeftBtn">
                         <img src="./img/left-arrow.png" alt="">
@@ -275,11 +324,11 @@
                         <img src="./img/right-arrow.png" alt="">
                     </button>
                 </div>
-                
+
 
             </section>
 
-            
+
 
         </div>
 
@@ -298,18 +347,18 @@
 
             moveRightBtn.addEventListener('click', () => {
                 if (currentIndex < positions.length - 1) {
-                    currentIndex++; 
+                    currentIndex++;
                 } else {
-                    currentIndex = 2; 
+                    currentIndex = 2;
                 }
                 applyPosition();
             });
 
             moveLeftBtn.addEventListener('click', () => {
                 if (currentIndex > 0) {
-                    currentIndex--; 
+                    currentIndex--;
                 } else {
-                    currentIndex = 2; 
+                    currentIndex = 2;
                 }
                 applyPosition();
             });
@@ -320,55 +369,80 @@
 
         <footer id="foot_template">
 
-            <div style="display: flex; border: px solid #e60073; justify-content: center; align-items: center;">
-                    <div>
-                        <div style="width: 4vw; height: 4vw;">
-                            <img style="width: 100%; height: 100%;" src="./img/logo-img-pink.png" alt="">
-                        </div>
+            <div id="bottom_copyright_div">
+                <div id="bottom_copyright_div_first">
+                    <div id="bcd_img">
+                        <img src="./img/logo-img-pink.png" alt="">
                     </div>
+                </div>
 
-                    <div style="margin-left: 1vw;">
-                        <p style="color: #e60073">© 2025 «МойСайт»</p>
-                    </div>
+                <div id="bottom_copyright_div_second">
+                    <p>© 2025 - 2026 «Портфолио Лучникова Т.Э.»</p>
+                </div>
             </div>
 
-            <div style="width: vw; display: flex;">
+            <div id="bottom_div_icon">
 
-                <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1rem;">
-                    
+                <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1vw;">
+
                     <div>
-                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
                             <div class="foot_div_img">
                                 <img src="./img/telegram_icon.png" alt="">
                             </div>
                         </a>
-                            
+
                     </div>
 
                     <div>
-                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
                             <div class="foot_div_img">
                                 <img src="./img/vk_icon.png" alt="">
                             </div>
                         </a>
-                            
+
                     </div>
-                        
+
                     <div>
-                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
                             <div class="foot_div_img">
                                 <img src="./img/gmail_icon.png" alt="">
                             </div>
                         </a>
-                            
+
+                    </div>
+
+                    <div>
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
+                            <div class="foot_div_img">
+                                <img src="./img/gmail_icon.png" alt="">
+                            </div>
+                        </a>
+
                     </div>
                 </div>
 
             </div>
-            
+
         </footer>
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- 
+            
+            1
+            Стиль
+
+
+            2
+            Я
+
+            3
+            Веб-разработка
+            
+            -->
 
     </body>
 

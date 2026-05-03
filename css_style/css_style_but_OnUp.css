@@ -1,0 +1,26 @@
+#goTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  font-size: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+  z-index: 999;
+
+  border: 3px solid #7127BA;
+}
+
+#goTopBtn:hover {
+  transform: scale(1.1);
+
+  border-color: #e60073;
+}
+
+#goTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}

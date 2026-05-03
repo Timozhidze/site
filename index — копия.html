@@ -1,89 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
 
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-        <style>      
-        
-    
-
+    <style>
         /* =================================================================================== */
 
 
-            .container {
-                width: 150px;
-                height: 200px;
-                border: 2px solid black;
-                overflow: hidden;   /* скрывает всё, что выходит за границы */
-                position: relative; /* можно не ставить, но для ясности */
-            }
+        .container {
+            width: 150px;
+            height: 200px;
+            border: 2px solid black;
+            overflow: hidden;
+            /* скрывает всё, что выходит за границы */
+            position: relative;
+            /* можно не ставить, но для ясности */
+        }
 
-            .moving-element {
-                width: 100px;
-                height: 100px;
-                background-color: coral;
-                transition: transform 0.3s ease;
-            }
+        .moving-element {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: transform 0.3s ease;
+        }
 
-            /* Классы для смещения */
-            .translate-0 {
-                transform: translateX(0);
-            }
-            .translate-1 {
-                transform: translateX(40px);
-            }
-            .translate-2 {
-                transform: translateX(80px);
-            }
-        
+        /* Классы для смещения */
+        .translate-0 {
+            transform: translateX(0);
+        }
 
+        .translate-1 {
+            transform: translateX(40px);
+        }
 
-
-        </style>
-
-    </head>
-
-    <body>
-
-        <!-- ----------------------------------------------------------------------------------------------------- -->
-
-        <div class="container">
-            <div class="moving-element"></div>
-        </div>
-        <button id="moveBtn">Сдвинуть</button>
-
-        <!-- ----------------------------------------------------------------------------------------------------- -->
-
-        <script>
-
-            const button = document.getElementById('moveBtn');
-            const movingElement = document.querySelector('.moving-element');
-
-            const translateClasses = ['translate-0', 'translate-1', 'translate-2'];
-            let step = 0;
-
-            button.addEventListener('click', () => {
-                step = (step + 1) % translateClasses.length;
-                translateClasses.forEach(cls => movingElement.classList.remove(cls));
-                movingElement.classList.add(translateClasses[step]);
-            });
-            
-        </script>
-        
-        
-        
+        .translate-2 {
+            transform: translateX(80px);
+        }
 
 
-    </body>
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px;
+            /* для демонстрации прокрутки */
+            background: linear-gradient(white, #f0f0f0);
+            margin: 0;
+            padding: 20px;
+        }
+
+        #goTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 28px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        #goTopBtn:hover {
+            background-color: #ff5722;
+            transform: scale(1.05);
+        }
+
+        #goTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .corner-border {
+            width: 200px;
+            height: 200px;
+            /* Рисуем 8 линий (4 горизонтальных и 4 вертикальных) */
+            background:
+                linear-gradient(to right, black 20px, transparent 20px) 0 0,
+                linear-gradient(to bottom, black 20px, transparent 20px) 0 0,
+                linear-gradient(to left, black 20px, transparent 20px) 100% 0,
+                linear-gradient(to bottom, black 20px, transparent 20px) 100% 0,
+                linear-gradient(to right, black 20px, transparent 20px) 0 100%,
+                linear-gradient(to top, black 20px, transparent 20px) 0 100%,
+                linear-gradient(to left, black 20px, transparent 20px) 100% 100%,
+                linear-gradient(to top, black 20px, transparent 20px) 100% 100%;
+
+            background-repeat: no-repeat;
+            background-size: 100% 2px, 2px 100%;
+            /* Толщина линий */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <div class="corner-border">gfgfg</div>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+</body>
 
 </html>
