@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,10 +10,12 @@
 
         <!-- ====================================================================== -->
 
-        <link rel="stylesheet" href="./css_style/main_css.css">
-        <link rel="stylesheet" href="./css_style/footer_css.css">
-        <link rel="stylesheet" href="./css_style/slider_css.css">
-        <link rel="stylesheet" href="./css_style/header_css.css">
+        <link rel="stylesheet" href="../css_style/main_css.css">
+        <link rel="stylesheet" href="../css_style/footer_css.css">
+        <link rel="stylesheet" href="../css_style/slider_css.css">
+        <link rel="stylesheet" href="../css_style/header_css.css">
+        <link rel="stylesheet" href="../css_style/css_style_but_OnUp.css">
+        <link rel="stylesheet" href="../css_style/css_work_page.css">
 
         <!-- ====================================================================== -->
 
@@ -22,13 +23,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-        <style>      
-        
+        <style>
             .one {
                 margin-top: 1wh;
             }
-
-            /* Стили для мобильных устройств (ширина экрана меньше 600px) */
 
         </style>
 
@@ -41,14 +39,18 @@
         <header>
             <div id="div_head_main">
                 <div class="div_head_main_first">
-                    <img style="width: 100%; height: 100%;" src="./img/logo-img.png" alt="">
+                    <img src="../img/logo-img.png" alt="">
                     <div style="margin-left: 3vw;">
                         <p class="p_header">Портфолио</p>
                     </div>
                 </div>
                 <div class="div_head_main_second">
-                    <a href="#"> <p class="p_header">Услуги</p> </a>
-                    <a href="#"> <p class="p_header">Связаться со мной</p> </a>
+                    <a href="#">
+                        <p class="p_header">Услуги</p>
+                    </a>
+                    <a href="#">
+                        <p class="p_header">Связаться со мной</p>
+                    </a>
                 </div>
             </div>
         </header>
@@ -56,269 +58,200 @@
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
         <div id="big_body_div_1">
-            
+
+            <button id="goTopBtn" title="Наверх">↑</button>
+
+            <script>
+
+                const btn = document.getElementById('goTopBtn');
+                window.addEventListener('scroll', () => {
+                    btn.classList.toggle('show', window.scrollY > 200);
+                });
+                btn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+            </script>
+
             <!-- -------------------------------------------------------------------------------------- -->
-            <div id="first_div_card" style="border: px solid red;">
-
-                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 10vh;">
-                
-                    <div class="one">
-                        <div style="width: 46vw;">
-                            <p id="glowing_text">Привет, ты на моем сайте портфолио!</p>
-                            <p id="glowing_text">Мне нравится frontend!</p>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; margin-top: 2vh; gap: 1rem;">
-                        <div class="two_icon">
-                            <a href="https://t.me/Timofey1559">
-                                <img class="two_img" src="./img/telegram_icon_white.png" alt="">
-                            </a>
-                        </div>
-                        <div class="two_icon">
-                            <a href="https://t.me/Timofey1559">
-                                <img class="two_img" src="./img/vk_icon_white.png" alt="">
-                            </a>
-                        </div>
-                        <div class="two_icon">
-                            <a href="https://t.me/Timofey1559">
-                                <img class="two_img" src="./img/gmail_icon_white.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
+            
 
             <!-- ----------------------------------------------------------------------------------------------------- -->
 
-            <div id="thirty_div" >
+            <div id="thirty_div">
 
                 <div class="forth_div">
 
-                    <h1><p style="font-size: 2vw; color: #e60073;">Обо мне</p></h1>
+                    <h1>
+                        <p style="font-size: 2vw; color: #e60073;">Опыт работы</p>
+                    </h1>
 
-                    <div id="thirty_div_wrap" >
+                    <div id="thirty_div_wrap">
 
-                            <div id="div_cartochka">              
-                                
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/monitor_icon.png" alt="">
-                                    </div>
+                        <div id="div_cartochka_work_page">
 
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Опыт работы</h1>
-                                        <p id="p_card_second">История моей трудовой деятельности и реализованные проекты.</p>
-                                    </div>
-                                    
-                                    
+                            <div id="div_card_img_second_work_page">
+                                <div id="div_card_img_first_work_page">
+                                    <img src="../img/monitor_icon.png" alt="">
                                 </div>
-                                <button>Узнать больше</button>
+
+                                <div class="div_card_thirty">
+                                    <h1 id="p_card_first">Яндекс Крауд</h1>
+                                    <p id="p_card_second">Должность: Специалист по разметке Поиска для Нейро</p>
+                                    <p id="p_card_second">Обязанности: <br> 
+                                        - Оценивать достоверность и качество ответов нейросети </br>
+                                        - Проверять правильность фактов или рассуждений через Поиск и генеративные модели <br>
+                                        - Проводить фактчекинг найденной информации, помечать страницы с недостоверными данными <br>
+                                        И др.
+                                    </p>
+                                </div>
+
+
                             </div>
                             
-                            <div id="div_cartochka">              
-                                
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/icon_sertificate.png" alt="">
-                                    </div>
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Навыки</h1>
-                                        <p id="p_card_second">Инструменты и технологии, которыми я владею на профессиональном уровне.</p>
-                                    </div>
-                                    
-                                    
-                                </div>
-                                <button>Узнать больше</button>
-                            </div>
+                        </div>
+
+                        
 
 
                         <!--
-                        <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
-                            <div id="img_glow_circle" ></div>
+                            <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
+                                <div id="img_glow_circle" ></div>
+                            </div>
+                            -->
+
+
+                        <div id="div_cartochka_work_page">
+
+                            <!--
+                                        <div id="circle_font"></div>
+                                    -->
+                            <div id="div_card_img_second_work_page">
+                                <div id="div_card_img_first_work_page">
+                                    <img src="../img/icon_sertificate.png" alt="">
+                                </div>
+                                <div class="div_card_thirty">
+                                    <h1 id="p_card_first">Сервисный центр "Консультант"</h1>
+                                    <p id="p_card_second">Должность: Специалист по разметке Поиска для Нейро</p>
+                                    <p id="p_card_second">Обязанности: <br> 
+                                        - Ремонт смартфонов/айфонов </br>
+                                        - Ремонт электронной техники<br>
+                                        - Паяльные работы<br>
+                                        - Диагностика</br>
+                                        - Полное сопровождение заказа от приема до конца ремонта<br>
+                                        - Заполнение отчетов<br>
+                                        И др.
+                                    </p>
+                                </div>
+
+
+                            </div>
+                            
                         </div>
-                        -->
+
                         
+                        <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На главную</button></a>
 
-                            <div id="div_cartochka">              
-                                
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/icon_sertificate.png" alt="">
-                                    </div>
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Образование</h1>
-                                        <p id="p_card_second">Базовое и дополнительное профессиональное обучение.</p>
-                                    </div>
-                                    
-                                    
-                                </div>
-                                <button>Узнать больше</button>
-                            </div>
 
-                            <div id="div_cartochka">              
-                                
-                                <!--
-                                    <div id="circle_font"></div>
-                                -->
-                                <div id="div_card_img_second">
-                                    <div id="div_card_img_first">
-                                        <img src="./img/monitor_icon.png" alt="">
-                                    </div>
-                                    <div class="div_card_thirty">
-                                        <h1 id="p_card_first">Услуги</h1>
-                                        <p id="p_card_second">Направления сотрудничества и варианты рабочих задач.</p>
-                                    </div>
-                                    
-                                    
-                                </div>
-                                <button>Узнать больше</button>
-                            </div>
-
-                    
 
                     </div>
 
                 </div>
-            
+
             </div>
 
             <!--
-                Опыт работы
-                Навыки
-                Образование
-                Услуги
-            -->
+                    Опыт работы
+                    Навыки
+                    Образование
+                    Услуги
+                -->
 
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1"
-                        tabindex="0"
-                        class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide4"
-                        class="carousel__prev"></a>
-                        <a href="#carousel__slide2" class="carousel__next"></a>
-                    </div>
-                    </li>
-                    <li id="carousel__slide2"
-                        tabindex="0"
-                        class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3"
-                        tabindex="0"
-                        class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4"
-                        tabindex="0"
-                        class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1"
-                        class="carousel__next">Go to first slide</a>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1"
-                        class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2"
-                        class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3"
-                        class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4"
-                        class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                    </ol>
-                </aside>
-            </section>
+            
+
 
         </div>
 
-        <!-- --------------------------------------------------------------------------------------------- -->
-
-        
+       
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
         <footer id="foot_template">
 
-            <div style="display: flex; border: px solid #e60073; justify-content: center; align-items: center;">
-                    <div>
-                        <div style="width: 3vw; height: 3vw;">
-                            <img style="width: 100%; height: 100%;" src="./img/logo-img-pink.png" alt="">
-                        </div>
+            <div id="bottom_copyright_div">
+                <div id="bottom_copyright_div_first">
+                    <div id="bcd_img">
+                        <img src="../img/logo-img-pink.png" alt="">
                     </div>
+                </div>
 
-                    <div style="margin-left: 1vw;">
-                        <p style="color: #e60073">© 2025 «МойСайт»</p>
-                    </div>
+                <div id="bottom_copyright_div_second">
+                    <p>© 2025 - 2026 «Портфолио Лучникова Т.Э.»</p>
+                </div>
             </div>
 
-            <div style="width: vw; display: flex;">
+            <div id="bottom_div_icon">
 
-                <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1rem;">
-                    
-                    <div style="border: px solid green;">
-                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/telegram_icon.png" alt="">
+                <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1vw;">
+
+                    <div>
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
+                            <div class="foot_div_img">
+                                <img src="../img/telegram_icon.png" alt="">
                             </div>
                         </a>
-                            
+
                     </div>
 
-                    <div style="border: px solid green;">
-                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/vk_icon.png" alt="">
+                    <div>
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
+                            <div class="foot_div_img">
+                                <img src="../img/vk_icon.png" alt="">
                             </div>
                         </a>
-                            
+
                     </div>
-                        
-                    <div style="border: px solid green;">
-                        <a style="display: flex; align-items: center; justify-content: center;" href="https://t.me/Timofey1559">
-                            <div style="width: 8vh; height: 8vh">
-                                <img style="width: 100%; height: 100%" src="./img/gmail_icon.png" alt="">
+
+                    <div>
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
+                            <div class="foot_div_img">
+                                <img src="../img/gmail_icon.png" alt="">
                             </div>
                         </a>
-                            
+
+                    </div>
+
+                    <div>
+                        <a style="display: flex; align-items: center; justify-content: center;"
+                            href="https://t.me/Timofey1559">
+                            <div class="foot_div_img">
+                                <img src="../img/gmail_icon.png" alt="">
+                            </div>
+                        </a>
+
                     </div>
                 </div>
 
             </div>
-            
+
         </footer>
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- 
+            
+            1
+            Стиль
+
+
+            2
+            Я
+
+            3
+            Веб-разработка
+            
+            -->
 
     </body>
 
