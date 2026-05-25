@@ -1,21 +1,28 @@
+html, body {
+  margin: 0;
+  /* height: 100%;  <-- УБЕРИ ЭТУ СТРОКУ */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   /* оставляем, чтобы футер прижимался */
+}
+
 #foot_template {
-    
     font-size: 3vh;
     border: px solid red;
     /* background: linear-gradient(145deg, #190324 0%, #1a0b38 40%, #2c012a 70%, #11101c 100%); */
-
     background: linear-gradient(145deg, #0d0113 0%, #27073a 40%, #140825 70%, #310357 100%);
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 2rem 4rem 2rem 4rem;
-
     border-top: 1px solid #e60073;
+    color: #e60073;
 
-    color: #e60073
+
 }
 
 .p_footer_contact {
