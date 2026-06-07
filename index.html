@@ -75,16 +75,14 @@
         <!-- -------------------------------------------------------------------------------------- -->
         <div id="first_div_card" style="border: px solid red;">
 
-            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 18vh;">
-
-                <div class="one">
+            <div id="welcome_div" style="display: flex; flex-direction: column; align-items: center; margin-top: 18vh;">
+                <div class="welcome_text">
                     <div style="width: 46vw;">
                         <p id="glowing_text">Fronted-разработчик</p>
                         <p id="glowing_text_mini">Адаптивно. Удобно. Красиво.</p>
                     </div>
                 </div>
-
-                <div style="display: flex; margin-top: 2vh; justify-content: space-between; width: 22vw; height: 6vw;">
+                <div id="welcom_contact">
                     <div class="head_div_img">
                         <a href="https://t.me/Timofey1559">
                             <img class="two_img" src="./img/telegram_icon_white.png" alt="Телеграм">
@@ -108,10 +106,7 @@
                         </a>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
@@ -124,12 +119,14 @@
                     <p style="font-size: 2vw; color: #e60073;">Обо мне</p>
                 </h1>
 
-                <div class="div_about_me">
-                    <div class="about_img">
-                        <img id="img_backgr" src="./img/icon_people.png" alt="">
+                <div id="div_about_me">
+                    <div id="about_img">
+                        <div id="about_img_fon">
+                            <img id="img_backgr" src="./img/my_foto.png" alt="">
+                        </div>
                     </div>
                     <div class="about_text">
-                        Здравствуйте, меня зовут Лучников Тимофей и я Frontend-разработчик. <br> Я создаю интерфейсы
+                        <p>Здравствуйте, меня зовут Лучников Тимофей и я Frontend-разработчик. <br> Я создаю интерфейсы
                             сайтов, именно на мне лежит обязанность создать сайт приятный на вид и удобный в использовании.
                         </p>
                     </div>
@@ -241,9 +238,11 @@
                 <!-- ----------------------------------------------------------------------------------------------------- -->
                 <div class="div_slider">
                     <div class="small_div_slider">
-                        <div class="div_img">
-                            <img class="img_slider" src="./img/img_web_design.jpg" alt="">
+
+                        <div id="div_img_first" >
+                            <img id="img_slider_first" src="./img/img_web_design.jpg" alt="">
                         </div>
+
                         <div
                             style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: px solid green;">
                             <div style="border: px solid yellow;">
@@ -264,12 +263,14 @@
                 <!-- ------------------------------------------------------------------------------------------------------- -->
                 <div class="div_slider">
                     <div class="small_div_slider">
-                        <div class="div_img" style="border: px solid yellow;">
-                            <img class="img_slider" src="./img/img_web_design.jpg" alt="">
+
+                        <div id="div_img_second">
+                            <img id="img_slider_second" src="./img/education_img_s.jpg" alt="">
                         </div>
+                        
                         <div
                             style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: px solid green;">
-                            <div style="border: px solid yellow;">
+                            <div style="border: px solid yellow; text-align: center; justify-content: center;">
                                 <h1 class="h_slider_style">Повышение квалификации</h1>
                             </div>
                             <div class="div_slider_p">
@@ -286,8 +287,8 @@
                 <!-- ------------------------------------------------------------------------------------------------------- -->
                 <div class="div_slider">
                     <div class="small_div_slider" style="border: px solid yellow;">
-                        <div class="div_img" style="border: px solid yellow;">
-                            <img class="img_slider" src="./img/img_web_design.jpg" alt="">
+                        <div id="div_img_three" style="border: px solid yellow;">
+                            <img id="img_slider_three" src="./img/fon_cms_f.jpg" alt="">
                         </div>
                         <div
                             style="width: 60%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: px solid green;">
@@ -365,7 +366,7 @@
             </div>
 
             <div id="bottom_copyright_div_second">
-                <p>© 2025 - 2026 «Портфолио Лучникова Т.Э.»</p>
+                <p>© 2025 - 2026 «Портфолио Лучников Т.Э.»</p>
             </div>
         </div>
 

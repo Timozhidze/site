@@ -3,11 +3,9 @@
     width: 75rem;
     height: 37.5rem;
     overflow-x: hidden;
-
     margin-top: 5rem;
     overflow: hidden;
     position: relative;
-
     border-radius: 50px;
     border: 5px solid #7127BA;
 }
@@ -17,9 +15,8 @@
 .moving-element {
     display: flex;
     transition: transform 0.3s ease;
-    margin-left: ;
+    /* margin-left: ; */
     width: 300%;
-
     border: px solid blue;
 }
 
@@ -51,58 +48,135 @@
     background-color: rgba(40, 35, 65, 0.7);
     width: 75rem;
     height: 37.5rem;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: row;
 }
 
-.div_img {
+/* ====================================================== */
+
+#div_img_first {
     width: 20rem;
     height: 24rem;
     border: px solid yellow;
-
     /*background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
     padding: 4px;
     /* толщина рамки /
     border-radius: 12px;
     display: inline-block;*/
-
     position: relative;
     display: inline-block;
 }
 
-.div_img::before {
+#div_img_first::before {
     display: flex;
     justify-content: center;
     align-items: center;
-
     content: '';
     position: absolute;
-
     width: 104%;
-    height: 104%;
+    height: 103%;
     background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
     /*background: linear-gradient(135deg, #381b6b, #8635d4, #f21a85);*/
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
     z-index: 0;
-    /* Небольшая тень для объёма – опционально */
-    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
 }
 
-.img_slider {
+#img_slider_first {
     display: block;
     position: relative;
     z-index: 1;
     background: #1f1a33;
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
     width: 100%;
+    height: 100%;
+    margin: 2%;
+}
+
+/* ================================================================= */
+
+#div_img_second {
+    width: 26rem;
+    height: 24rem;
+    border: px solid yellow;
+    /*background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
+    padding: 4px;
+    /* толщина рамки /
+    border-radius: 12px;
+    display: inline-block;*/
+    position: relative;
+    display: inline-block;
+}
+
+#div_img_second::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    content: '';
+    position: absolute;
+    width: 104%;
+    height: 104%;
+    background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
+    /*background: linear-gradient(135deg, #381b6b, #8635d4, #f21a85);*/
+    z-index: 0;
+
+}
+
+#img_slider_second {
+    border-radius: 5rem;
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: #1f1a33;
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+}
+
+/* ================================================================= */
+
+#div_img_three {
+    width: 22rem;
+    height: 24rem;
+    border: px solid yellow;
+    /*background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
+    padding: 4px;
+    /* толщина рамки /
+    border-radius: 12px;
+    display: inline-block;*/
+    position: relative;
+    display: inline-block;
+}
+
+#div_img_three::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: '';
+    position: absolute;
+    width: 104%;
+    height: 105%;
+    background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
+    /*background: linear-gradient(135deg, #381b6b, #8635d4, #f21a85);*/
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 0;
+
+}
+
+#img_slider_three {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: #1f1a33;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 100%;
     height: 101%;
     margin: 2%;
 }
+
+/* ========================================================================== */
 
 .small_div_slider {
     display: flex;
@@ -122,12 +196,13 @@
 
 .p_slider_text {
     font-size: 22px;
+    text-align: center;
 }
 
 .div_slider_p {
     border: px solid yellow;
     margin-top: -1rem;
-    margin-left: 2rem;
+
 }
 
 /* ========================================================================= */
@@ -136,22 +211,28 @@
     .container {
         width: 600px;
     }
-
     .div_slider {
-
         border: px solid orange;
-
         width: 37.5rem;
         height: 37.5rem;
     }
-
     .small_div_slider {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-    .div_img {
+    #div_img_first {
+        width: 10rem;
+        height: 12rem;
+        margin-top: 1rem;
+    }
+    #div_img_second {
+        width: 10rem;
+        height: 12rem;
+        margin-top: 1rem;
+        
+    }
+    #div_img_three {
         width: 10rem;
         height: 12rem;
         margin-top: 1rem;
@@ -160,17 +241,13 @@
     .h_slider_style {
         font-size: 18px;
     }
-
     .p_slider_text {
         font-size: 12px;
     }
-
     .div_slider_p {
-
-    margin-top: 0rem;
-    margin-left: 0rem;
-}
-
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
 }
 
 /* ========================================================================= */
@@ -189,18 +266,26 @@
         align-items: center;
     }
 
-    .div_img {
+    #div_img_first {
         width: 4rem;
         height: 5rem;
         margin-top: 1rem;
-
-
     }
 
-    .img_slider {
-        border-radius: 25%;
-        border: #7127BA 1px solid;
+    #div_img_second {
+        width: 4rem;
+        height: 5rem;
+        margin-top: 1rem;
     }
+
+    #div_img_three {
+        width: 4rem;
+        height: 5rem;
+        margin-top: 1rem;
+    }
+
+
+
 }
 
 

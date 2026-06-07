@@ -37,12 +37,27 @@ header {
     font-size: 1vw;
 }
 
+#welcom_contact {
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    width: 22vw;
+    height: 6vw;
+    border: px solid yellow;
+    align-items: center;
+}
+
 .head_div_img {
     width: 4vw;
     height: 4vw;
     border: 0.3vw solid white;
     border-radius: 25%;
     transition: 0.2s;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
 }
 
 .head_div_img:hover {
@@ -50,10 +65,24 @@ header {
     border-color: #7127BA;
 }
 
+.two_img {
+    width: 100%;
+    height: 100%;
+}
+
 /* ------------------------------------------------------------------------------ */
 
 @media (max-width: 1000px) {
     header {
         padding: 1rem 4rem 1rem 4rem;
+    }
+
+    .head_div_img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    #welcom_contact {
+        width: 28vw;
     }
 }
