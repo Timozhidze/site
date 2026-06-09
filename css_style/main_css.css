@@ -1,21 +1,16 @@
 body {
-
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
     margin: 0;
     padding: 0;
-
     background: #0a0412;
-
     color: #F0E6D6;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 button {
     font-size: 2vh;
     background: #2C1250;
@@ -26,21 +21,24 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     padding: 0.9rem 0;
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
-    margin: 0px 16px 16px 16px;
-
     transition: 0.2s;
 }
-
 button:hover {
     transform: scale(1.1);
     border-color: #e60073;
 }
-
+.card_a {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 16px 26px 16px;
+}
 img {
     width: 100%;
     height: 100%;
@@ -58,44 +56,30 @@ img {
     background-size: cover;
     background-position: center;
     box-shadow: inset 0 0 6vw 6vw black;
-
     border-bottom: 1px solid #e60073;
-
     transform: translateZ(0);
-    /* или */
     backface-visibility: hidden;
 }
-
 #thirty_div {
-    border: px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 0;
     z-index: 10;
-
-
-
 }
-
 .forth_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: px solid blue
 }
-
 #thirty_div_wrap {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    border: px solid red;
-
     display: grid;
     gap: 40px;
     justify-items: center;
     align-content: center;
-
     padding: 20px;
 }
 
@@ -106,46 +90,31 @@ img {
     flex-shrink: 0;
     width: 100px;
     height: 100px;
-    border: px solid #7127BA;
 }
-
 .div_card_thirty {
     margin: 20px;
     min-width: 260px;
     max-width: 300px;
     overflow-wrap: break-word;
-
-    border: px solid yellow;
 }
-
 #div_cartochka {
     display: flex;
     border-radius: 28px;
     background: linear-gradient(140deg, rgba(54, 23, 97, 0.41) 0%, rgba(45, 25, 73, 1) 20%, rgba(44, 18, 80, 0.3) 70%, rgba(44, 18, 80, 0.1) 90%);
-
     flex-direction: column;
-
     min-width: 20rem;
-
     align-items: center;
     box-shadow: 0 -0.5vh 0px 0 #693B93;
     transition: 0.2s;
 }
-
 #div_cartochka:hover {
     box-shadow: 0 -0.5vh 0 0 #e60073;
-
 }
-
 #div_card_img_second {
     margin-left: 10%;
-    border: px solid green;
-
     margin: 10px;
     display: flex;
-
     padding: 10px;
-
     justify-content: center;
     align-items: center;
 }
@@ -156,7 +125,6 @@ a {
     text-decoration: none;
     color: #F0E6D6;
 }
-
 
 /*----------------------------------------------------------------------------------------------------*/
 
@@ -170,28 +138,20 @@ a {
     margin-top: 5vw;
     background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
 }
-
 #p_card_first {
-
     margin-bottom: 0%;
-    border: 0px solid green;
     color: #e60073;
 }
-
 #p_card_second {
-    border: px solid green;
     font-size: 1rem;
     overflow-wrap: break-word;
     line-height: 1.4;
 }
-
 #mother_div_cartochka {
     display: flex;
     justify-content: space-evenly;
     margin-top: -1vh;
     gap: 2vw;
-    border: px solid red;
-
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -200,12 +160,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0px solid red;
     height: 100%;
-
-
 }
-
 
 /*----------------------------------------------------------------------------------------------------*/
 
@@ -221,7 +177,6 @@ a {
         0 0 3.12vw #763CAC,
         0 0 3.65vw #763CAC;
 }
-
 #glowing_text_mini {
     font-size: 1.5vw;
     text-align: center;
@@ -234,65 +189,48 @@ a {
         0 0 3.12vw #763CAC,
         0 0 3.65vw #763CAC;
 }
-
 #img_glowing {
-
     text-align: center;
     border-radius: 50%;
-    /* Скругление углов для создания круга */
     background-image: radial-gradient(farthest-corner at center, #763CAC 0%, transparent 72%);
     width: 6vw;
     height: 2vw;
 }
-
 #img_glow_circle {
     text-align: center;
     border-radius: 50%;
-    /* Скругление углов для создания круга */
     background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
     width: 40vw;
     height: 45vw;
     z-index: -10;
 }
-
 #big_body_div_1 {
-    border: px solid orange;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     flex: 1 0 auto;
     min-height: 0;
 }
-
-
-#mother_div_cartochka {
+/* #mother_div_cartochka {
     display: flex;
     justify-content: space-evenly;
     margin-top: -1vh;
     padding: 0;
     border: 5px solid red;
     width: 80vw;
-}
-
-
+} */
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 @media (max-width: 1000px) {
     #thirty_div_wrap {
         grid-template-columns: 1fr;
     }
-
     #div_card_img_second {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
-
-
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/

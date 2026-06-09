@@ -4,67 +4,52 @@ header {
     padding: 2rem 4rem 2rem 4rem;
     border-bottom: 1px solid #e60073;
 }
-
 #div_head_main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0px solid red;
     height: 100%;
 }
-
 .div_head_main_first {
-    border: 0px solid white;
     width: 8vh;
     height: 8vh;
     display: flex;
     align-items: center;
 }
-
 .div_head_main_second {
-    border: 0px solid white;
     width: 11vw;
     height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .p_header {
     color: #F0E6D6;
     margin-left: 1vw;
-    border: px solid yellow;
     font-size: 1vw;
 }
-
 #welcom_contact {
     display: flex;
     margin-top: 2vh;
     justify-content: space-between;
     width: 22vw;
     height: 6vw;
-    border: px solid yellow;
     align-items: center;
 }
-
 .head_div_img {
     width: 4vw;
     height: 4vw;
     border: 0.3vw solid white;
     border-radius: 25%;
     transition: 0.2s;
-
     display: flex;
     justify-content: center;
-
     overflow: hidden;
 }
-
 .head_div_img:hover {
     transform: scale(1.1);
     border-color: #7127BA;
 }
-
 .two_img {
     width: 100%;
     height: 100%;
@@ -76,12 +61,10 @@ header {
     header {
         padding: 1rem 4rem 1rem 4rem;
     }
-
     .head_div_img {
         width: 6vw;
         height: 6vw;
     }
-
     #welcom_contact {
         width: 28vw;
     }

@@ -12,18 +12,14 @@
     gap: 2rem;
     transition: 0.2s;
 }
-
 .div_about_me:hover {
     border-color: #e60073;
 }
-
 .about_text {
     width: 60%;
     font-size: 22px;
-    border: px solid green;
     text-align: center;
 }
-
 #about_img {
     display: flex;
     justify-content: center;
@@ -35,7 +31,6 @@
     height: 22.5rem;
     position: relative;
 }
-
 #about_img_fon {
     display: flex;
     justify-content: center;
@@ -47,7 +42,6 @@
     height: 97%;
     position: relative;
 }
-
 #img_backgr {
     position: absolute;
     bottom: 0px;
@@ -62,12 +56,10 @@
     #div_about_me {
         width: 50rem;
     }
-
     #about_img {
         width: 22.5rem;
         height: 20rem;
     }
-
     #img_backgr {
         height: 26rem;
     }
@@ -82,20 +74,16 @@
         width: 16rem;
         height: 30rem;
     }
-
     #about_img {
         border-radius: 15% 50% 15% 15%;
         width: 12rem;
         height: 12rem;
     }
-
     #img_backgr {
         height: 16rem;
     }
-
     .about_text {
         width: 90%;
         font-size: 16px;
     }
-
 }
