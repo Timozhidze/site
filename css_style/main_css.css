@@ -32,13 +32,6 @@ button:hover {
     transform: scale(1.1);
     border-color: #e60073;
 }
-.card_a {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 16px 26px 16px;
-}
 img {
     width: 100%;
     height: 100%;
@@ -61,6 +54,7 @@ img {
     backface-visibility: hidden;
 }
 #thirty_div {
+    border: px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,10 +66,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: px solid blue
 }
 #thirty_div_wrap {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+    border: px solid red;
     display: grid;
     gap: 40px;
     justify-items: center;
@@ -85,19 +81,21 @@ img {
 
 /* ---------------------------- */
 
-#div_card_img_first {
+.div_card_img_first {
     margin: 10px;
     flex-shrink: 0;
     width: 100px;
     height: 100px;
+    border: px solid #7127BA;
 }
 .div_card_thirty {
     margin: 20px;
     min-width: 260px;
     max-width: 300px;
     overflow-wrap: break-word;
+    border: px solid yellow;
 }
-#div_cartochka {
+.div_cartochka {
     display: flex;
     border-radius: 28px;
     background: linear-gradient(140deg, rgba(54, 23, 97, 0.41) 0%, rgba(45, 25, 73, 1) 20%, rgba(44, 18, 80, 0.3) 70%, rgba(44, 18, 80, 0.1) 90%);
@@ -107,11 +105,13 @@ img {
     box-shadow: 0 -0.5vh 0px 0 #693B93;
     transition: 0.2s;
 }
-#div_cartochka:hover {
+.div_cartochka:hover {
     box-shadow: 0 -0.5vh 0 0 #e60073;
+
 }
-#div_card_img_second {
+.div_card_img_second {
     margin-left: 10%;
+    border: px solid green;
     margin: 10px;
     display: flex;
     padding: 10px;
@@ -124,6 +124,24 @@ img {
 a {
     text-decoration: none;
     color: #F0E6D6;
+}
+.a_but {
+    margin: 0px 16px 32px 16px; 
+    font-size: 2vh;
+    background: #2C1250;
+    border: 2px solid #7127BA;
+    border-radius: 26px;
+    box-shadow: 0 0.21vw 0.21vw 0 black;
+    color: #F0E6D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0.9rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -138,11 +156,13 @@ a {
     margin-top: 5vw;
     background-image: radial-gradient(farthest-corner at center, #e60073 0%, transparent 72%);
 }
-#p_card_first {
+.p_card_first {
     margin-bottom: 0%;
+    border: 0px solid green;
     color: #e60073;
 }
-#p_card_second {
+.p_card_second {
+    border: px solid green;
     font-size: 1rem;
     overflow-wrap: break-word;
     line-height: 1.4;
@@ -152,6 +172,7 @@ a {
     justify-content: space-evenly;
     margin-top: -1vh;
     gap: 2vw;
+    border: px solid red;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -160,6 +181,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 0px solid red;
     height: 100%;
 }
 
@@ -205,32 +227,46 @@ a {
     z-index: -10;
 }
 #big_body_div_1 {
+    border: px solid orange;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 0 auto;
     min-height: 0;
 }
-/* #mother_div_cartochka {
+#mother_div_cartochka {
     display: flex;
     justify-content: space-evenly;
     margin-top: -1vh;
     padding: 0;
     border: 5px solid red;
     width: 80vw;
-} */
+}
 
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* =================================================================================== */
+
+#welcome_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18vh;
+}
+.section_title {
+    font-size: 2vw;
+    color: #e60073;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* =================================================================================== */
 
 @media (max-width: 1000px) {
     #thirty_div_wrap {
         grid-template-columns: 1fr;
     }
-    #div_card_img_second {
+    .div_card_img_second {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 }
-
-/*---------------------------------------------------------------------------------------------------------------------------------------*/

@@ -8,8 +8,8 @@ body {
     min-height: 100vh;
 }
 .gradient_line {
-    width: 80%;
-    height: 4px;
+    width: 4px;
+    height: 100%;
     margin: 2rem;
     background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
 }
@@ -24,6 +24,7 @@ body {
     justify-content: center;
     box-shadow: 0 -0.5vh 0px 0 #693B93;
     transition: 0.2s;
+    margin-bottom: 1rem;
 }
 #div_cartochka_work_page:hover {
     box-shadow: 0 -0.5vh 0 0 #e60073;
@@ -31,7 +32,7 @@ body {
 #div_card_img_second_work_page {
     margin: 0px;
     display: flex;
-    padding-top: 2rem;
+    padding: 1rem 0 1rem 0rem;
     gap: 1rem;
     align-items: center;
 }
@@ -57,10 +58,9 @@ body {
 #thirty_div_wrap {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    display: grid;
     justify-items: center;
     align-content: center;
-    padding: 20px;
+    /* padding: 0px; */
 }
 #div_card_img_first_work_page {
     margin: 10px;

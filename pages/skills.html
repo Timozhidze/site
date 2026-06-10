@@ -1,245 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ====================================================================== -->
+    <!-- ====================================================================== -->
 
-        <link rel="stylesheet" href="../css_style/main_css.css">
-        <link rel="stylesheet" href="../css_style/footer_css.css">
-        <link rel="stylesheet" href="../css_style/slider_css.css">
-        <link rel="stylesheet" href="../css_style/header_css.css">
-        <link rel="stylesheet" href="../css_style/css_style_but_OnUp.css">
-        <link rel="stylesheet" href="../css_style/css_work_page.css">
+    <link rel="stylesheet" href="../css_style/main_css.css">
+    <link rel="stylesheet" href="../css_style/footer_css.css">
+    <link rel="stylesheet" href="../css_style/slider_css.css">
+    <link rel="stylesheet" href="../css_style/header_css.css">
+    <link rel="stylesheet" href="../css_style/css_style_but_OnUp.css">
+    <link rel="stylesheet" href="../css_style/css_skills.css">
 
-        <!-- ====================================================================== -->
+    <!-- ====================================================================== -->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-        <style>
-            .one {
-                margin-top: 1wh;
-            }
+    <style>
+        .one {
+            margin-top: 1wh;
+        }
+    </style>
 
-        </style>
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
-
-        <header>
-            <div id="div_head_main">
-                <div class="div_head_main_first">
-                    <img src="../img/logo-img.png" alt="">
-                    <div style="margin-left: 3vw;">
-                        <p class="p_header">Портфолио</p>
-                    </div>
-                </div>
-                <div class="div_head_main_second">
-                    <a href="#">
-                        <p class="p_header">Услуги</p>
-                    </a>
-                    <a href="#">
-                        <p class="p_header">Связаться со мной</p>
-                    </a>
+    <header>
+        <div id="div_head_main">
+            <div class="div_head_main_first">
+                <img src="../img/logo-img.png" alt="">
+                <div style="margin-left: 3vw;">
+                    <p class="p_header">Портфолио</p>
                 </div>
             </div>
-        </header>
+            <div class="div_head_main_second">
+                <a href="#">
+                    <p class="p_header">Услуги</p>
+                </a>
+                <a href="#">
+                    <p class="p_header">Связаться со мной</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <div id="big_body_div_1">
+
+        <button id="goTopBtn" title="Наверх">↑</button>
+
+        <script src="../js_scripts/js_but_OnUp.js"></script>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <div id="big_body_div_1">
+        <div id="thirty_div">
 
-            <button id="goTopBtn" title="Наверх">↑</button>
+            <div class="forth_div">
 
-            <script>
+                <h1 class="section_title" style="margin-top: 4rem;">
+                    <span style="font-size: 2vw; color: #e60073;">Frontend</span>
+                </h1>
 
-                const btn = document.getElementById('goTopBtn');
-                window.addEventListener('scroll', () => {
-                    btn.classList.toggle('show', window.scrollY > 200);
-                });
-                btn.addEventListener('click', () => {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
+                <div id="thirty_div_wrap" style="border: px solid green;">
 
-            </script>
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/html5_icon.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div>
 
-            <!-- -------------------------------------------------------------------------------------- -->
-            
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">HTML5</h1>
+                                <p class="p_card_second">
+                                    Семантическая вёрстка, валидный код, адаптивные макеты</br>
+                                    Современная семантическая разметка, оптимизация изображений и др.</br>
+                                </p>
 
-            <!-- ----------------------------------------------------------------------------------------------------- -->
+                            </div>
+                        </div>
+                    </div>
 
-            <div id="thirty_div">
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/css3_icon.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div>
 
-                <div class="forth_div">
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">CSS3</h1>
+                                <p class="p_card_second">
+                                    Современный CSS3: переменные, градиенты, тени, закругления</br>
+                                    Анимации, переходы, трансформации</br>
+                                    Адаптивная вёрстка (Flexbox, Grid, медиазапросы) и др.
+                                </p>
 
-                    <h1>
-                        <p style="font-size: 2vw; color: #e60073;">Опыт работы</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/js_icon_language_th.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div> 
+                            <!-- 69 55 -->
+
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">JavaScript</h1>
+                                <p class="p_card_second">
+                                    ES6+: переменные, стрелки, промисы, работа с DOM</br>
+                                    массивы, события, анимации и др.</br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========================================================== -->
+
+                    <h1 class="section_title">
+                        <span style="font-size: 2vw; color: #e60073;">Backend</span>
                     </h1>
 
-                    <div id="thirty_div_wrap">
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/sql_icon.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div> 
+                            <!-- 69 55 -->
 
-                        <div id="div_cartochka_work_page">
-
-                            <div id="div_card_img_second_work_page">
-                                <div id="div_card_img_first_work_page">
-                                    <img src="../img/monitor_icon.png" alt="">
-                                </div>
-
-                                <div class="div_card_thirty">
-                                    <h1 id="p_card_first">Яндекс Крауд</h1>
-                                    <p id="p_card_second">Должность: Специалист по разметке Поиска для Нейро</p>
-                                    <p id="p_card_second">Обязанности: <br> 
-                                        - Оценивать достоверность и качество ответов нейросети </br>
-                                        - Проверять правильность фактов или рассуждений через Поиск и генеративные модели <br>
-                                        - Проводить фактчекинг найденной информации, помечать страницы с недостоверными данными <br>
-                                        И др.
-                                    </p>
-                                </div>
-
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">SQL</h1>
+                                <p class="p_card_second">
+                                    SQL: SELECT, JOIN, GROUP BY, подзапросы</br>
+                                    Управление реляционными БД: создание таблиц, связей, оптимизация запросов и др.</br>
+                                </p>
 
                             </div>
-                            
                         </div>
-
-                        
-
-
-                        <!--
-                            <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
-                                <div id="img_glow_circle" ></div>
-                            </div>
-                            -->
-
-
-                        <div id="div_cartochka_work_page">
-
-                            <!--
-                                        <div id="circle_font"></div>
-                                    -->
-                            <div id="div_card_img_second_work_page">
-                                <div id="div_card_img_first_work_page">
-                                    <img src="../img/icon_sertificate.png" alt="">
-                                </div>
-                                <div class="div_card_thirty">
-                                    <h1 id="p_card_first">Сервисный центр "Консультант"</h1>
-                                    <p id="p_card_second">Должность: Специалист по разметке Поиска для Нейро</p>
-                                    <p id="p_card_second">Обязанности: <br> 
-                                        - Ремонт смартфонов/айфонов </br>
-                                        - Ремонт электронной техники<br>
-                                        - Паяльные работы<br>
-                                        - Диагностика</br>
-                                        - Полное сопровождение заказа от приема до конца ремонта<br>
-                                        - Заполнение отчетов<br>
-                                        И др.
-                                    </p>
-                                </div>
-
-
-                            </div>
-                            
-                        </div>
-
-                        
-                        <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На главную</button></a>
-
-
-
                     </div>
+
+                    <!-- ========================================================== -->
+
+                    <h1 class="section_title">
+                        <span style="font-size: 2vw; color: #e60073;">Инструменты разработчика</span>
+                    </h1>
+
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/git-github_icon.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div> 
+                            <!-- 69 55 -->
+
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">GitHub/Git</h1>
+                                <p class="p_card_second">
+                                    GitHub: PR, Issues, Actions, Code Review</br>
+                                    Git: коммиты, ветки, слияние, push/pull и др.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========================================================== -->
+
+                    <h1 class="section_title">
+                        <span style="font-size: 2vw; color: #e60073;">UX/UI</span>
+                    </h1>
+
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/figma_icon.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div> 
+                            <!-- 69 55 -->
+
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">Figma</h1>
+                                <p class="p_card_second">
+                                    Вёрстка макетов: авто-лейауты, компоненты, сетки</br>
+                                    Коллаборация: комментарии, шаринг, версионирование</br>
+                                    Работа с макетом для вёрстки (размеры, отступы, шрифты, цвета) и др.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div_cartochka_work_page" style="border: px solid red;">
+                        <div id="div_card_img_second_work_page" style="border: px solid red;">
+                            <div id="div_card_img_first_work_page">
+                                <img src="../img/AdobePhotoshop_icon.png" alt="">
+                            </div>
+                            <div class="gradient_line"></div> 
+                            <!-- 69 55 -->
+
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">Adobe Photoshop</h1>
+                                <p class="p_card_second">
+                                    Обработка изображений: слои, маски, корректирующие слои</br>
+                                    Подготовка графики для веба (оптимизация, прозрачность, форматы PNG/JPG/WebP)</br>
+                                    Создание баннеров, коллажей, работа с текстом и формами и др.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На
+                            главную</button></a>
+
+
 
                 </div>
 
             </div>
 
-            <!--
+        </div>
+
+        <!--
                     Опыт работы
                     Навыки
                     Образование
                     Услуги
                 -->
 
-            
 
 
+
+    </div>
+
+
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <footer id="foot_template">
+        <div id="bottom_copyright_div">
+            <div id="bottom_copyright_div_first">
+                <div id="bcd_img">
+                    <img src="../img/logo-img-pink.png" alt="">
+                </div>
+            </div>
+            <div id="bottom_copyright_div_second">
+                <p>© 2025 - 2026 «Портфолио Лучников Т.Э.»</p>
+            </div>
         </div>
-
-       
-
-        <!-- ----------------------------------------------------------------------------------------------------- -->
-
-        <footer id="foot_template">
-
-            <div id="bottom_copyright_div">
-                <div id="bottom_copyright_div_first">
-                    <div id="bcd_img">
-                        <img src="../img/logo-img-pink.png" alt="">
-                    </div>
+        <div id="bottom_div_icon">
+            <div class="footer_contact">
+                <div>
+                    <a class="footer_link" href="https://t.me/Timofey1559">
+                        <div class="foot_div_img">
+                            <img src="../img/telegram_icon.png" alt="Телеграм">
+                        </div>
+                    </a>
                 </div>
-
-                <div id="bottom_copyright_div_second">
-                    <p>© 2025 - 2026 «Портфолио Лучникова Т.Э.»</p>
+                <div>
+                    <a class="footer_link" href="https://vk.com/tluchnikov2016">
+                        <div class="foot_div_img">
+                            <img src="../img/vk_icon.png" alt="ВКонтакте">
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="footer_link" href="https://max.ru/u/f9LHodD0cOJOzr5BCvywPNYeo6dxTHz3jgn0iaNxIk0uH9-2J_DaDWlpFzE">
+                        <div class="foot_div_img">
+                            <img src="../img/Max_logo-1024x1024_redaction_3_pink.png" alt="Макс">
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="footer_link" href="https://vk.com/away.php?to=https%3A%2F%2Fhh.ru%2Fresume%2Fa1b0eb0eff0cee30980039ed1f67644a39326d&utf=1">
+                        <div class="foot_div_img">
+                            <img src="../img/hhru_icon_pink.png" alt="HeadHunter">
+                        </div>
+                    </a>
                 </div>
             </div>
+        </div>
+    </footer>
 
-            <div id="bottom_div_icon">
-
-                <div style="display: flex; border: px solid white; justify-content: center; align-items: center; gap: 1vw;">
-
-                    <div>
-                        <a style="display: flex; align-items: center; justify-content: center;"
-                            href="https://t.me/Timofey1559">
-                            <div class="foot_div_img">
-                                <img src="../img/telegram_icon.png" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div>
-                        <a style="display: flex; align-items: center; justify-content: center;"
-                            href="https://t.me/Timofey1559">
-                            <div class="foot_div_img">
-                                <img src="../img/vk_icon.png" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div>
-                        <a style="display: flex; align-items: center; justify-content: center;"
-                            href="https://t.me/Timofey1559">
-                            <div class="foot_div_img">
-                                <img src="../img/gmail_icon.png" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div>
-                        <a style="display: flex; align-items: center; justify-content: center;"
-                            href="https://t.me/Timofey1559">
-                            <div class="foot_div_img">
-                                <img src="../img/gmail_icon.png" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </footer>
-
-        <!-- ----------------------------------------------------------------------------------------------------- 
+    <!-- ----------------------------------------------------------------------------------------------------- 
             
             1
             Стиль
@@ -253,6 +315,32 @@
             
             -->
 
-    </body>
+    <script src="../js_scripts/js_modal.js"></script>
+
+    <!-- <script>
+        const button = document.getElementById('but_modal');
+        const button_exit = document.getElementById('but_exit');
+        const div = document.getElementById('modal');
+
+        button.addEventListener('click', () => {
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+                button_exit.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        })
+
+        button_exit.addEventListener('click', () => {
+            if (div.style.display === 'block') {
+                div.style.display = 'none';
+            } else {
+                div.style.display = 'block';
+            }
+        })
+
+    </script> -->
+
+</body>
 
 </html>

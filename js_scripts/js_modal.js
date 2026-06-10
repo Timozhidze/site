@@ -1,4 +1,4 @@
-const modalCount = 2;
+const modalCount = 3;
 
 for (let i = 1; i <= modalCount; i++) {
 
@@ -10,7 +10,7 @@ for (let i = 1; i <= modalCount; i++) {
     if (openBtn && modal && closeBtn) {
         // Открытие
         openBtn.onclick = () => {
-            modal.style.display = 'flex';   // или 'block', если не используете flex
+            modal.style.display = 'flex';
         };
         // Закрытие по крестику/кнопке
         closeBtn.onclick = () => {
