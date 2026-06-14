@@ -1,182 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="веб-дизайн, фронтенд, портфолио разработчика, создание сайтов, Лучников Тимофей, резюме, frontend">
+    <meta name="description" content="Портфолио веб-разработчика. Создание современных сайтов и веб-приложений.">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo-img_favicon_pages.png" type="image/png">
+    <title>Портфолио Лучников Т.Э. - Проекты</title>
 
-        <!-- ====================================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../css_style/main_css.css">
-        <link rel="stylesheet" href="../css_style/footer_css.css">
-        <link rel="stylesheet" href="../css_style/slider_css.css">
-        <link rel="stylesheet" href="../css_style/header_css.css">
-        <link rel="stylesheet" href="../css_style/css_style_but_OnUp.css">
-        <link rel="stylesheet" href="../css_style/css_work_page.css">
+    <!-- ====================================================================== -->
 
-        <!-- ====================================================================== -->
+    <link rel="stylesheet" href="../css_style/main_css.css">
+    <link rel="stylesheet" href="../css_style/footer_css.css">
+    <link rel="stylesheet" href="../css_style/slider_css.css">
+    <link rel="stylesheet" href="../css_style/header_css.css">
+    <link rel="stylesheet" href="../css_style/css_style_but_OnUp.css">
+    <link rel="stylesheet" href="../css_style/css_projects.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <!-- ====================================================================== -->
 
-        <style>
-            .one {
-                margin-top: 1wh;
-            }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-        </style>
+    <style>
+        .one {
+            margin-top: 1wh;
+        }
+    </style>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ============================================================================================================= -->
 
-        <header>
-            <div id="div_head_main">
-                <div class="div_head_main_first">
-                    <img src="../img/logo-img.png" alt="">
-                    <div style="margin-left: 3vw;">
-                        <p class="p_header">Портфолио</p>
-                    </div>
-                </div>
-                <div class="div_head_main_second">
-                    <a href="#">
-                        <p class="p_header">Услуги</p>
-                    </a>
-                    <a href="#">
-                        <p class="p_header">Связаться со мной</p>
-                    </a>
+    <header>
+        <div id="div_head_main">
+            <div class="div_head_main_first">
+                <img src="../img/logo-img.png" alt="">
+                <div style="margin-left: 3vw;">
+                    <p class="p_header">Портфолио</p>
                 </div>
             </div>
-        </header>
+            <div class="div_head_main_second">
+                <a href="/Luchnikov_Timofey.pdf" download="Резюме Лучников Т.Э.">
+                    <p class="p_header">Скачать резюме</p>
+                </a>
+            </div>
+        </div>
+    </header>
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ============================================================================================================= -->
 
-        <div id="big_body_div_1">
+    <div id="big_body_div_1">
 
-            <button id="goTopBtn" title="Наверх">↑</button>
+        <button id="goTopBtn" title="Наверх">↑</button>
 
-            <script>
+        <script src="../js_scripts/js_but_OnUp.js"></script>
 
-                const btn = document.getElementById('goTopBtn');
-                window.addEventListener('scroll', () => {
-                    btn.classList.toggle('show', window.scrollY > 200);
-                });
-                btn.addEventListener('click', () => {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
 
-            </script>
+        <!-- ============================================================================================================= -->
 
-            <!-- -------------------------------------------------------------------------------------- -->
-            
+        <div id="thirty_div">
 
-            <!-- ----------------------------------------------------------------------------------------------------- -->
+            <div class="forth_div">
 
-            <div id="thirty_div">
+                <h1 class="section_title">
+                    <span>Проекты - Дизайн</span>
+                </h1>
+                <h2 class="section_title_htwo">
+                    <span>Дизайн - логотипы</span>
+                </h2>
 
-                <div class="forth_div">
+                <div id="thirty_div_wrap">
 
-                    <h1 class="section_title">
-                        <p style="font-size: 2vw; color: #e60073;">Опыт работы</p>
-                    </h1>
+                    <div id="div_cartochka_work_page">
+                        <div id="div_card_img_second_work_page">
+                            <div id="div_card_img_first_work_page">
+                                <img class="img_project" src="../img/logo_coffe.jpg" alt="">
+                            </div>
+                            <div class="gradient_line"></div>
 
-                    <div id="thirty_div_wrap">
-
-                        <div id="div_cartochka_work_page">
-
-                            <div id="div_card_img_second_work_page">
-                                <div id="div_card_img_first_work_page">
-                                    <img src="../img/monitor_icon.png" alt="">
-                                </div>
-
-                                <div class="div_card_thirty">
-                                    <h1 id="p_card_first">Яндекс Крауд</h1>
-                                    <p id="p_card_second">Должность: Специалист по разметке Поиска для Нейро</p>
-                                    <p id="p_card_second">Обязанности: <br> 
-                                        - Оценивать достоверность и качество ответов нейросети </br>
-                                        - Проверять правильность фактов или рассуждений через Поиск и генеративные модели <br>
-                                        - Проводить фактчекинг найденной информации, помечать страницы с недостоверными данными <br>
-                                        И др.
-                                    </p>
-                                </div>
-
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">Логотип "Энергия"</h1>
+                                <p class="p_card_second">
+                                    Этот логотип был создан в процессе участия в конкурсе для фрилансеров на заказ логотипа для кофени.
+                                </p>
 
                             </div>
-                            
                         </div>
-
-                        
-
-
-                        <!--
-                            <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
-                                <div id="img_glow_circle" ></div>
-                            </div>
-                            -->
-
-
-                        <!-- <div id="div_cartochka_work_page">
-
-                            
-                                        <div id="circle_font"></div>
-                                    
-                            <div id="div_card_img_second_work_page">
-                                <div id="div_card_img_first_work_page">
-                                    <img src="../img/icon_sertificate.png" alt="">
-                                </div>
-                                <div class="div_card_thirty">
-                                    <h1 id="p_card_first">Сервисный центр "Консультант"</h1>
-                                    <p id="p_card_second">Должность: Специалист по разметке Поиска для Нейро</p>
-                                    <p id="p_card_second">Обязанности: <br> 
-                                        - Ремонт смартфонов/айфонов </br>
-                                        - Ремонт электронной техники<br>
-                                        - Паяльные работы<br>
-                                        - Диагностика</br>
-                                        - Полное сопровождение заказа от приема до конца ремонта<br>
-                                        - Заполнение отчетов<br>
-                                        И др.
-                                    </p>
-                                </div>
-
-
-                            </div>
-                            
-                        </div> -->
-
-                        
-                        <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На главную</button></a>
-
-
-
                     </div>
+
+                    <div id="div_cartochka_work_page">
+                        <div id="div_card_img_second_work_page">
+                            <div id="div_card_img_first_work_page">
+                                <img class="img_project" src="../img/logo_impulse.jpg" alt="">
+                            </div>
+                            <div class="gradient_line"></div>
+
+                            <div class="div_card_thirty">
+                                <h1 id="p_card_first">Логотип "Impulse"</h1>
+                                <p class="p_card_second">
+                                    Этот логотип был создан в процессе участия в конкурсе для фрилансеров на заказ логотипа для энерго-компании.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На
+                            главную</button></a>
 
                 </div>
 
             </div>
-
-            <!--
-                    Опыт работы
-                    Навыки
-                    Образование
-                    Услуги
-                -->
-
-            
-
 
         </div>
 
-       
+    </div>
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <footer id="foot_template">
+
+    <!-- ============================================================================================================= -->
+
+    <footer id="foot_template">
         <div id="bottom_copyright_div">
             <div id="bottom_copyright_div_first">
                 <div id="bcd_img">
@@ -204,14 +156,16 @@
                     </a>
                 </div>
                 <div>
-                    <a class="footer_link" href="https://max.ru/u/f9LHodD0cOJOzr5BCvywPNYeo6dxTHz3jgn0iaNxIk0uH9-2J_DaDWlpFzE">
+                    <a class="footer_link"
+                        href="https://max.ru/u/f9LHodD0cOJOzr5BCvywPNYeo6dxTHz3jgn0iaNxIk0uH9-2J_DaDWlpFzE">
                         <div class="foot_div_img">
                             <img src="../img/Max_logo-1024x1024_redaction_3_pink.png" alt="Макс">
                         </div>
                     </a>
                 </div>
                 <div>
-                    <a class="footer_link" href="https://vk.com/away.php?to=https%3A%2F%2Fhh.ru%2Fresume%2Fa1b0eb0eff0cee30980039ed1f67644a39326d&utf=1">
+                    <a class="footer_link"
+                        href="https://vk.com/away.php?to=https%3A%2F%2Fhh.ru%2Fresume%2Fa1b0eb0eff0cee30980039ed1f67644a39326d&utf=1">
                         <div class="foot_div_img">
                             <img src="../img/hhru_icon_pink.png" alt="HeadHunter">
                         </div>
@@ -221,20 +175,6 @@
         </div>
     </footer>
 
-        <!-- ----------------------------------------------------------------------------------------------------- 
-            
-            1
-            Стиль
-
-
-            2
-            Я
-
-            3
-            Веб-разработка
-            
-            -->
-
-    </body>
+</body>
 
 </html>

@@ -12,6 +12,7 @@ body {
     height: 4px;
     margin: 2rem;
     background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
+    border-radius: 5px;
 }
 #div_cartochka_work_page {
     display: flex;
@@ -246,6 +247,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
+}
+
+.img_education {
+    border: 5px solid #e60073;
+    border-radius: 15px;
 }
 
 /* ============================================ Модальное окно выше ============================================== */

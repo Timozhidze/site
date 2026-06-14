@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="веб-дизайн, фронтенд, портфолио разработчика, создание сайтов, Лучников Тимофей, резюме, frontend">
+    <meta name="description" content="Портфолио веб-разработчика. Создание современных сайтов и веб-приложений.">
+
+    <link rel="icon" href="./logo-img_favicon_pages.png" type="image/png">
+    <title>Портфолио Лучников Т.Э. - Образование</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,7 +37,7 @@
 
 <body>
 
-    <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ================================================================================================================================== -->
 
     <header>
         <div id="div_head_main">
@@ -44,45 +48,29 @@
                 </div>
             </div>
             <div class="div_head_main_second">
-                <a href="#">
-                    <p class="p_header">Услуги</p>
-                </a>
-                <a href="#">
-                    <p class="p_header">Связаться со мной</p>
+                <a href="/Luchnikov_Timofey.pdf" download="Резюме Лучников Т.Э.">
+                    <p class="p_header">Скачать резюме</p>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ================================================================================================================================== -->
 
     <div id="big_body_div_1">
 
         <button id="goTopBtn" title="Наверх">↑</button>
 
-        <script>
+        <script src="../js_scripts/js_but_OnUp.js"></script>
 
-            const btn = document.getElementById('goTopBtn');
-            window.addEventListener('scroll', () => {
-                btn.classList.toggle('show', window.scrollY > 200);
-            });
-            btn.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-        </script>
-
-        <!-- -------------------------------------------------------------------------------------- -->
-
-
-        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ================================================================================================================================== -->
 
         <div id="thirty_div">
 
             <div class="forth_div">
 
                 <h1 class="section_title">
-                    <p style="font-size: 2vw; color: #e60073;">Формальное обучение:</p>
+                    <span>Формальное обучение:</span>
                 </h1>
 
                 <div id="thirty_div_wrap">
@@ -116,32 +104,17 @@
                                 </div>
                                 <button id="but_exit1" class="but_educat">Закрыть</button>
                             </div>
-
-
                         </div>
-
-
-
                     </div>
 
-                    <!--
-                            <div style="width: 70vw; border: 0px solid orange; display: flex; justify-content: center; align-items: center; z-index: -3; position: absolute;">
-                                <div id="img_glow_circle" ></div>
-                            </div>
-                    -->
-
                     <h1 class="section_title">
-                        <p style="font-size: 2vw; color: #e60073;">Неформальное обучение:</p>
+                        <span>Неформальное обучение:</span>
                     </h1>
 
                     <div id="div_cartochka_work_page">
-
-                        <!--
-                                        <div id="circle_font"></div>
-                                    -->
                         <div id="div_card_img_second_work_page">
                             <div id="div_card_img_first_work_page">
-                                <img src="../img/stepik_icon_1.png" alt="">
+                                <img class="img_education" src="../img/stepik_icon_1.png" alt="">
                             </div>
                             <div class="div_card_thirty">
                                 <h1 id="p_card_first">Название образов. платформы: Stepik</h1>
@@ -164,20 +137,13 @@
                                 </div>
                                 <button id="but_exit2" class="but_educat">Закрыть</button>
                             </div>
-
-
                         </div>
-
                     </div>
 
                     <div id="div_cartochka_work_page">
-
-                        <!--
-                                        <div id="circle_font"></div>
-                                    -->
                         <div id="div_card_img_second_work_page">
                             <div id="div_card_img_first_work_page">
-                                <img src="../img/js_icon_1.png" alt="">
+                                <img class="img_education" src="../img/js_icon_1.png" alt="">
                             </div>
                             <div class="div_card_thirty">
                                 <h1 id="p_card_first">Название образов. платформы: Stepik</h1>
@@ -193,46 +159,21 @@
 
                         <div style="width: 50%; margin-bottom: 2rem;">
                             <button id="but_modal3" class="but_educ">Сертификат</button>
-
                             <div id="modal3">
                                 <div id="modal_w3">
                                     <img src="../img/cartificate_js_1.png" alt="">
                                 </div>
                                 <button id="but_exit3" class="but_educat">Закрыть</button>
                             </div>
-
-
                         </div>
-
                     </div>
-
-
-                    <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На
-                            главную</button></a>
-
-
-
+                    <a class="a_on_main" href="../index.html"><button class="but_on_main" title="Узнать больше">На главную</button></a>
                 </div>
-
             </div>
-
         </div>
-
-        <!--
-                    Опыт работы
-                    Навыки
-                    Образование
-                    Услуги
-                -->
-
-
-
-
     </div>
 
-
-
-    <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ================================================================================================================================== -->
 
     <footer id="foot_template">
         <div id="bottom_copyright_div">
@@ -279,45 +220,7 @@
         </div>
     </footer>
 
-    <!-- ----------------------------------------------------------------------------------------------------- 
-            
-            1
-            Стиль
-
-
-            2
-            Я
-
-            3
-            Веб-разработка
-            
-            -->
-
     <script src="../js_scripts/js_modal.js"></script>
-
-    <!-- <script>
-        const button = document.getElementById('but_modal');
-        const button_exit = document.getElementById('but_exit');
-        const div = document.getElementById('modal');
-
-        button.addEventListener('click', () => {
-            if (div.style.display === 'none') {
-                div.style.display = 'block';
-                button_exit.style.display = 'block';
-            } else {
-                div.style.display = 'none';
-            }
-        })
-
-        button_exit.addEventListener('click', () => {
-            if (div.style.display === 'block') {
-                div.style.display = 'none';
-            } else {
-                div.style.display = 'block';
-            }
-        })
-
-    </script> -->
 
 </body>
 
